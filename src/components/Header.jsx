@@ -1,5 +1,6 @@
 import React from 'react';
 import InlineSVG from 'svg-inline-react';
+import { RepoForkedIcon, PersonIcon, LawIcon } from '@primer/octicons-react'
 const simpleIcons = require('simple-icons');
 
 const Header = () => {
@@ -35,12 +36,17 @@ const Header = () => {
                         </li>
                         <li class="nav-item" style={{ width: '63px' }} >
                             <a class="nav-link" href="#">
-                                {<InlineSVG src={author } alt='Author'/>}
+                                {<PersonIcon size='medium' fill='#000' aria-label="Add new item" />}
                             </a>
                         </li>
                         <li class="nav-item" style={{ width: '70px' }} >
                             <a class="nav-link" href="#">
-                                {<InlineSVG src={simpleIcons.Get('buymeacoffee').svg} />}
+                                {<RepoForkedIcon size='medium' fill='#000' aria-label="Add new item" />}
+                            </a>
+                        </li>
+                        <li class="nav-item" style={{ width: '70px' }} >
+                            <a class="nav-link" href="#">
+                                {<LawIcon size='medium' fill='#000' aria-label="Add new item" />}
                             </a>
                         </li>
                     </ul>
