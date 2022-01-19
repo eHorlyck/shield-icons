@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import icons from './services/icons'
 import IconCard from './components/IconCard'
 import Header from './components/Header'
+import Search from './components/Search'
 
 
 const icon = new icons()
@@ -20,6 +21,7 @@ class Root extends Component {
             <>
                 <>
                     <Header />
+                    <Search />
                 </>
                 <div className='container'>
                     <IconCard data={data} />
