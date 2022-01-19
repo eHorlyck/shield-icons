@@ -11,7 +11,7 @@ const Header = () => {
                     <p>2152 Free Badges of popular brands</p>
                 </div>
                 <div className="col-md-6" >
-                    <ul class="nav">
+                    <ul class="nav justify-content-end">
                         <li class="nav-item" style={{ width: '70px' }} >
                             <a class="nav-link" href="#">
                                 {<InlineSVG src={simpleIcons.Get('github').svg} />}
