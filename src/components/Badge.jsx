@@ -2,7 +2,7 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 
 const Badge = ({ title, hex }) => {
-    console.log(title[31])
+    // console.log(title[31])
     // console.log(hex)
     const matchTitle=new RegExp(/\s/g)
     // console.log(title.match(matchTitle))
