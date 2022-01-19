@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import icons from './services/icons'
 import IconCard from './components/IconCard'
+import Header from './components/Header'
 
 
 const icon = new icons()
@@ -16,9 +17,14 @@ class Root extends Component {
         const data = this.state.data
 
         return (
-            <div className='container'>
-                <IconCard data={data} />
-            </div>
+            <>
+                <>
+                    <Header />
+                </>
+                <div className='container'>
+                    <IconCard data={data} />
+                </div>
+            </>
         )
     }
 }
