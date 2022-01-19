@@ -1,11 +1,16 @@
 import React, { Component } from 'react'
 import SVGIcon from './SVGIcon'
 import Badge from './Badge'
+import { CopyToClipboard } from 'react-copy-to-clipboard'
 
 
 
 class IconCard extends Component {
 
+    state = {
+        value: '',
+        copied: false
+    }
 
     render() {
         const { data } = this.props
@@ -20,8 +25,18 @@ class IconCard extends Component {
                             < >
                                 <Badge title={item.title} hex={item.hex} />
                             </>
-                            <div className="card-footer" style={{ backgroundColor: `#${item.hex}` }}>
-                                <small className='text-light'>{`#${item.hex}`}</small>
+                            <div
+                                className="card-footer"
+                                style={{ backgroundColor: `#${item.hex}`, cursor: 'pointer' }}
+                            >
+                                <CopyToClipboard text={this.state.value}>
+                                    <small
+                                        className='text-light'
+                                        onClick={() => this.setState({ value: item.hex, copied: true })}
+                                    >
+                                        {`#${item.hex}`}
+                                    </small>
+                                </CopyToClipboard>
                             </div>
                         </div>
                     </div>
