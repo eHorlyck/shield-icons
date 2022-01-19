@@ -11,24 +11,24 @@ const Header = () => {
                     <p>2152 Free Badges of popular brands</p>
                 </div>
                 <div className="col-md-6" >
-                    <ul class="nav justify-content-end">
-                        <li class="nav-item" style={{ width: '70px' }} >
-                            <a class="nav-link" href="#">
+                    <ul className="nav justify-content-end">
+                        <li className="nav-item" style={{ width: '70px' }} >
+                            <a className="nav-link" href="#">
                                 {<InlineSVG src={simpleIcons.Get('github').svg} />}
                             </a>
                         </li>
-                        <li class="nav-item" style={{ width: '70px' }} >
-                            <a class="nav-link" href="#">
+                        <li className="nav-item" style={{ width: '70px' }} >
+                            <a className="nav-link" href="#">
                                 {<InlineSVG src={simpleIcons.Get('kofi').svg} />}
                             </a>
                         </li>
-                        <li class="nav-item" style={{ width: '70px' }} >
-                            <a class="nav-link" href="#">
+                        <li className="nav-item" style={{ width: '70px' }} >
+                            <a className="nav-link" href="#">
                                 {<InlineSVG src={simpleIcons.Get('patreon').svg} />}
                             </a>
                         </li>
-                        <li class="nav-item" style={{ width: '70px' }} >
-                            <a class="nav-link" href="#">
+                        <li className="nav-item" style={{ width: '70px' }} >
+                            <a className="nav-link" href="#">
                                 {<InlineSVG src={simpleIcons.Get('buymeacoffee').svg} />}
                             </a>
                         </li>
