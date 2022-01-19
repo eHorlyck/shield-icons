@@ -13,7 +13,13 @@ class Root extends Component {
 
     render() {
         // console.log(this.state.data)
-        
+        const data = this.state.data
+
+        return (
+            <div className='w-25 h-25'>
+                <IconCard data={data} />
+            </div>
+        )
     }
 }
 
