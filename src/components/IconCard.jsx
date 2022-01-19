@@ -1,5 +1,6 @@
 import React from 'react'
 import SVGIcon from './SVGIcon'
+import Badge from './Badge'
 
 
 const IconCard = ({ data }) => {
@@ -13,6 +14,7 @@ const IconCard = ({ data }) => {
                         </div>
                         <div className="card-body">
                             <p>{item.title}</p>
+                            <Badge title={item.title} hex={item.hex} />
                         </div>
                         <div className="card-footer">
                             <small>{item.hex}</small>
