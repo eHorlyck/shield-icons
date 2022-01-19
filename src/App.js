@@ -1,10 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+import Root from "./Root";
 
 function App() {
   return (
     <>
-      Bismillahir Rahmanir Rahim
+      <Root/>
     </>
   );
 }
