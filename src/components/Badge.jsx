@@ -35,7 +35,9 @@ class Badge extends Component {
 
         return (
             <CopyToClipboard text={this.state.value}>
-                <div className="card-body text-center overflow-auto" style={{ minHeight: '80px' }}
+                <div
+                    className="card-body text-center overflow-auto"
+                    style={{ minHeight: '80px', cursor: 'pointer' }}
                     onMouseEnter={() => this.toggleHover()}
                     onMouseLeave={() => this.toggleHover()}
                     // onClick={() => this.toggleClick(markdown)}
