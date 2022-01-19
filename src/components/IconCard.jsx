@@ -4,17 +4,23 @@ import SVGIcon from './SVGIcon'
 
 const IconCard = ({ data }) => {
     return (
-        data.map((item, key) => (
-            <div className='card' style={{ width: '15%' }}>
-                <div className='card-img-top'>
-                    <SVGIcon svg={item.svg} />
+        <div className="row">
+            {data.map((item) => (
+                <div className="col-md-3 col-sm-4 col-xs-6 my-2" key={item.slug}>
+                    <div className='card'>
+                        <div className='card-img-fluid' style={{ width: '20%', margin: '10px auto', display: 'block' }}>
+                            <SVGIcon svg={item.svg} />
+                        </div>
+                        <div className="card-body">
+                            <p>{item.title}</p>
+                        </div>
+                        <div className="card-footer">
+                            <small>{item.hex}</small>
+                        </div>
+                    </div>
                 </div>
-                <div className="card-body">
-                    <p>{data.title}</p>
-                    <p></p>
-                </div>
-            </div>
-        ))
+            ))}
+        </div>
     )
 }
 export default IconCard
