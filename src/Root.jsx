@@ -16,7 +16,7 @@ class Root extends Component {
         const data = this.state.data
 
         return (
-            <div className='w-25 h-25'>
+            <div className='container'>
                 <IconCard data={data} />
             </div>
         )
