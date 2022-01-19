@@ -12,8 +12,7 @@ const IconCard = ({ data }) => {
                         <div className='card-img-fluid' style={{ width: '20%', margin: '10px auto', display: 'block' }}>
                             <SVGIcon svg={item.svg} />
                         </div>
-                        <div className="card-body">
-                            <p>{item.title}</p>
+                        <div className="card-body text-center overflow-auto">
                             <Badge title={item.title} hex={item.hex} />
                         </div>
                         <div className="card-footer">
