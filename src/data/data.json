@@ -128,7 +128,9 @@
     }, {
         "name": "Adobe Premiere Pro",
         "slug": "adobepremierepro"
-    }, {
+    }
+    , 
+    {
         "name": "Adobe XD",
         "slug": "adobexd"
     }, {
