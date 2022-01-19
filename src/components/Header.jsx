@@ -34,21 +34,6 @@ const Header = () => {
                                 {<InlineSVG src={simpleIcons.Get('buymeacoffee').svg} />}
                             </a>
                         </li>
-                        <li class="nav-item" style={{ width: '63px' }} >
-                            <a class="nav-link" href="#">
-                                {<PersonIcon size='medium' fill='#000' aria-label="Add new item" />}
-                            </a>
-                        </li>
-                        <li class="nav-item" style={{ width: '70px' }} >
-                            <a class="nav-link" href="#">
-                                {<RepoForkedIcon size='medium' fill='#000' aria-label="Add new item" />}
-                            </a>
-                        </li>
-                        <li class="nav-item" style={{ width: '70px' }} >
-                            <a class="nav-link" href="#">
-                                {<LawIcon size='medium' fill='#000' aria-label="Add new item" />}
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </div>
