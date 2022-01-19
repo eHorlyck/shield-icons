@@ -17,29 +17,29 @@ class Search extends Component {
                         {/* <Dark /> */}
                     </div>
                     <div className="col-md-7" >
-                        <ul class="nav justify-content-end align-items-center">
-                            <li class="nav-item" style={{ width: '63px' }} >
-                                <a class="nav-link" href="#">
+                        <ul className="nav justify-content-end align-items-center">
+                            <li className="nav-item" style={{ width: '63px' }} >
+                                <a className="nav-link" href="#">
                                     {<PersonIcon size='medium' fill='#000' aria-label="Add new item" />}
                                 </a>
                             </li>
-                            <li class="nav-item" style={{ width: '70px' }} >
-                                <a class="nav-link" href="#">
+                            <li className="nav-item" style={{ width: '70px' }} >
+                                <a className="nav-link" href="#">
                                     {<RepoForkedIcon size='medium' fill='#000' aria-label="Add new item" />}
                                 </a>
                             </li>
-                            <li class="nav-item" style={{ width: '70px' }} >
-                                <a class="nav-link" href="#">
+                            <li className="nav-item" style={{ width: '70px' }} >
+                                <a className="nav-link" href="#">
                                     {<LawIcon size='medium' fill='#000' aria-label="Add new item" />}
                                 </a>
                             </li>
-                            <li class="nav-item" style={{ width: '70px' }} >
-                                <a class="nav-link" href="#">
+                            <li className="nav-item" style={{ width: '70px' }} >
+                                <a className="nav-link" href="#">
                                     {<StarIcon size='medium' fill='#000' aria-label="Add new item" />}
                                 </a>
                             </li>
-                            <li class="nav-item" style={{ width: '70px' }} >
-                                <a class="nav-link" href="#">
+                            <li className="nav-item" style={{ width: '70px' }} >
+                                <a className="nav-link" href="#">
                                     {<HeartIcon size='medium' fill='#000' aria-label="Add new item" />}
                                 </a>
                             </li>
