@@ -13,15 +13,33 @@ class Root extends Component {
         data: icon.getIcon(),
     }
 
+    getBadge = (e) => {
+        console.log(e)
+        // console.log(this.state.data.map(item => console.log(item.name)))
+        // const searchData = this.state.data.filter(item => item.title.toLowerCase().includes(search.toLowerCase()))
+        const searched = this.state.data.filter(
+            item => {
+                if (e === '') {
+                    return item
+                } else if (item.title.toLowerCase().includes(e.toLowerCase())) {
+                    console.log(item)
+                    return item
+                }
+            }
+        )
+        this.setState({ data:searched })
+    }
+    
+
     render() {
-        // console.log(this.state.data)
+        console.log(this.state.data)
         const data = this.state.data
 
         return (
             <>
                 <>
                     <Header />
-                    <Search />
+                    <Search getBadge={this.getBadge} />
                 </>
                 <div className='container'>
                     <IconCard data={data} />
