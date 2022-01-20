@@ -23,13 +23,13 @@ class Badge extends Component {
 
     render() {
         const { title, hex } = this.props
+        const matchTitle = new RegExp(/\s/g)
+        const relpaceTitle = title.replace(matchTitle, '%20')
+        const markdown = `![](https://img.shields.io/badge/${relpaceTitle}-${hex}?style=for-the-badge&logo=${relpaceTitle}&logoColor=white)`
+
         // console.log(title[31])
         // console.log(hex)
-        const matchTitle = new RegExp(/\s/g)
-        // console.log(title.match(matchTitle))
-        const relpaceTitle = title.replace(matchTitle, '%20')
-
-        const markdown = `![](https://img.shields.io/badge/${relpaceTitle}-${hex}?style=for-the-badge&logo=${relpaceTitle}&logoColor=white)`
+        // console.log(title.match(matchTitle)
         // console.log(markdown)
         // const markdown=`## Hi`
 
