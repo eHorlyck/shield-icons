@@ -6,12 +6,17 @@ import { RepoForkedIcon, PersonIcon, LawIcon, StarIcon, HeartIcon } from '@prime
 
 class Search extends Component {
 
+    handleChange = (e) => {
+        this.props.getBadge(e.target.value)
+    }
+
     render() {
+        // console.log(this.state.search)
         return (
             <div className='container pb-3'>
                 <div className="row">
                     <div className="col-md-3  align-self-center ">
-                        <input type="text" className="form-control" placeholder="Search by brand..." />
+                        <input type="text" className="form-control" placeholder="Search by brand..." onChange={this.handleChange} />
                     </div>
                     <div className="col-md-9" >
                         <ul className="nav justify-content-end align-items-center">
