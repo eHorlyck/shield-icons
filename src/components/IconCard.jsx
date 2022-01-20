@@ -5,8 +5,6 @@ import Badge from './Badge'
 
 class IconCard extends Component {
 
-
-
     render() {
         const { data } = this.props
         return (
