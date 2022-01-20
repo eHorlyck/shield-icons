@@ -1,7 +1,9 @@
-import React, { Component } from 'react'
-import IconCard from './components/IconCard'
-import Header from './components/Header'
+import React, { Component, Suspense, lazy } from 'react'
 import simpleClass from './services/main'
+import Spinner from './components/Spinner'
+const Header = lazy(() => import('./components/Header'))
+const IconCard = lazy(() => import('./components/IconCard'))
+
 
 
 const data = new simpleClass()
@@ -18,12 +20,12 @@ class Root extends Component {
 
         return (
             <>
-                <>
+                <Suspense fallback={<Spinner />}>
                     <Header />
-                </>
-                <>
-                    <IconCard data={data} />
-                </>
+                </Suspense>
+                <Suspense fallback={<Spinner />}>
+                    {<IconCard data={data} />}
+                </Suspense>
             </>
         )
     }
