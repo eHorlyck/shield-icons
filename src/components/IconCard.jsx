@@ -1,8 +1,8 @@
-import React, { Component, useState } from 'react'
-import SVGIcon from './SVGIcon'
-import Badge from './Badge'
-import Search from './Search'
-
+import React, { useState, Suspense, lazy } from 'react'
+import Spinner from './Spinner'
+const SVGIcon = lazy(() => import('./SVGIcon'))
+const Badge = lazy(() => import('./Badge'))
+const Search = lazy(() => import('./Search'))
 
 const IconCard = ({ data }) => {
 
@@ -10,13 +10,13 @@ const IconCard = ({ data }) => {
 
     return (
         <>
-            <Search search={(e) => setSearch(e)} />
-
+            <Suspense fallback={<Spinner/>}>
+                <Search search={(e) => setSearch(e)} />
+            </Suspense>
 
 
             <div className="container">
 
-                
 
                 <div className="row">
                     {data.filter(item => {
@@ -29,10 +29,14 @@ const IconCard = ({ data }) => {
                         <div className="col-md-3 col-sm-4 col-xs-6 my-2" key={item.slug}>
                             <div className='card'>
                                 <div className='card-img-fluid' style={{ width: '20%', margin: '10px auto', display: 'block' }}>
-                                    <SVGIcon svg={item.svg} alt={item.title} />
+                                    <Suspense fallback={<Spinner/>}>
+                                        <SVGIcon svg={item.svg} alt={item.title} />
+                                    </Suspense>
                                 </div>
                                 < >
-                                    <Badge title={item.title} hex={item.hex} />
+                                    <Suspense fallback={<Spinner/>}>
+                                        <Badge title={item.title} hex={item.hex} />
+                                    </Suspense>
                                 </>
 
                                 <div
