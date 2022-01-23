@@ -1,4 +1,8 @@
-<h2 align="center"> Web Badge</h2>
+<div align="center"> 
+<h2>Web Badge</h2>
+Web Badge will create about 2152 amazing badges to use in GitHub Markdown or Any Web Pages.<br>
+    
+</div>
 
 ## FAQ
 
