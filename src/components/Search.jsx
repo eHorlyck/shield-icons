@@ -2,16 +2,16 @@ import React, { Component } from 'react';
 import { RepoForkedIcon, PersonIcon, LawIcon, StarIcon, HeartIcon } from '@primer/octicons-react'
 
 
-
 class Search extends Component {
 
+    
     handleChange = (e) => {
         this.props.search(e.target.value)
     }
 
     render() {
         return (
-            <div className='container pb-3'>
+            <div className='container pb-3' >
                 <div className="row">
                     <div className="col-md-3  align-self-center ">
                         <input
