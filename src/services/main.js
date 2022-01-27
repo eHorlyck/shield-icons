@@ -1,9 +1,6 @@
 const simpleIcons = require('simple-icons');
 const slug = require('../data/slug.json')
-
 // console.log(simpleIcons.Get('hackerearth'))
-
-
 
 export default class simpleClass {
 
@@ -21,5 +18,4 @@ export default class simpleClass {
             }
         })
     }
-
 }
