@@ -47,12 +47,12 @@ class Search extends Component {
                                 </a>
                             </li>
                             <li className="nav-item"  >
-                                <a className="nav-link" href="https://github.com/mrhrifat/web-badge#support" target='_blank' rel="noopener noreferrer">
+                                <a className="nav-link" href="" target='_blank' rel="noopener noreferrer">
                                     {<BugIcon size='medium' fill='#000' />}
                                 </a>
                             </li>
                             <li className="nav-item" >
-                                <a className="nav-link" href="#" target='_blank' rel="noopener noreferrer">
+                                <a className="nav-link" href="https://github.com/mrhrifat/web-badge#support" target='_blank' rel="noopener noreferrer">
                                     {<HeartIcon size='medium' fill='#000' />}
                                 </a>
                             </li>
