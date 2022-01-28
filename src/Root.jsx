@@ -19,11 +19,11 @@ class Root extends Component {
 
     componentDidMount() {
         countapi.visits('root').then((result) => {
-                // console.log(result)
-                this.setState({
-                    visitor: result.value
-                })
+            // console.log(result)
+            this.setState({
+                visitor: result.value
             })
+        })
             .catch((e) => {
                 console.log(e)
             })
