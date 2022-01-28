@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { CopyToClipboard } from 'react-copy-to-clipboard'
-import { CopyIcon, CheckCircleFillIcon } from '@primer/octicons-react'
+import { CopyIcon, CheckIcon } from '@primer/octicons-react'
 
 class Badge extends Component {
 
@@ -45,8 +45,8 @@ class Badge extends Component {
                 >
 
                     {this.state.isHover ?
-                        this.state.copied ? <CheckCircleFillIcon /> :
-                            <CopyIcon aria-label='Double Click To Copy' />
+                        this.state.copied ? <CheckIcon aria-label="Add new item" /> :
+                            <CopyIcon aria-label="Add new item" />
                         :
                         <ReactMarkdown children={markdown} />
                     }
