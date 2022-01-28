@@ -7,7 +7,7 @@ const Search = lazy(() => import('./Search'))
 const IconCard = ({ data }) => {
 
     const [search, setSearch] = useState('')
-
+    // console.log(visitor)
     return (
         <>
             <Suspense fallback={<Spinner />}>
