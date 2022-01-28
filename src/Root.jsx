@@ -1,7 +1,7 @@
 import React, { Component, Suspense, lazy } from 'react'
+import countapi from 'countapi-js'
 import simpleClass from './services/main'
 import Spinner from './components/Spinner'
-const countapi = require('countapi-js')
 const Header = lazy(() => import('./components/Header'))
 const IconCard = lazy(() => import('./components/IconCard'))
 
