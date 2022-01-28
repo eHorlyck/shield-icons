@@ -18,22 +18,22 @@ const Header = ({ visitor }) => {
                 <div className="col-md-6" >
                     <ul className="nav justify-content-end justify-content-sm-center">
                         <li className="nav-item" style={{ width: '70px' }} >
-                            <a className="nav-link" href="https://github.com/mrhrifat/web-badge" target="_blank">
+                            <a className="nav-link" href="https://github.com/mrhrifat/web-badge" target="_blank" rel="noopener noreferrer">
                                 {<InlineSVG src={simpleIcons.Get('github').svg} />}
                             </a>
                         </li>
                         <li className="nav-item" style={{ width: '70px' }} >
-                            <a className="nav-link" href="https://ko-fi.com/mrhrifat" target="_blank">
+                            <a className="nav-link" href="https://ko-fi.com/mrhrifat" target="_blank" rel="noopener noreferrer">
                                 {<InlineSVG src={simpleIcons.Get('kofi').svg} />}
                             </a>
                         </li>
                         <li className="nav-item" style={{ width: '70px' }} >
-                            <a className="nav-link" href="https://patreon.com/mrhrifat" target="_blank">
+                            <a className="nav-link" href="https://patreon.com/mrhrifat" target="_blank" rel="noopener noreferrer">
                                 {<InlineSVG src={simpleIcons.Get('patreon').svg} />}
                             </a>
                         </li>
                         <li className="nav-item" style={{ width: '70px' }} >
-                            <a className="nav-link" href="https://buymeacoffee.com/mrhrifat" target="_blank">
+                            <a className="nav-link" href="https://buymeacoffee.com/mrhrifat" target="_blank" rel="noopener noreferrer">
                                 {<InlineSVG src={simpleIcons.Get('buymeacoffee').svg} />}
                             </a>
                         </li>
