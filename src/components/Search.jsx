@@ -28,32 +28,32 @@ class Search extends Component {
                         <ul className="nav justify-content-md-end justify-content-sm-center align-items-center">
                             <li className="nav-item"  >
                                 <a className="nav-link" href="https://github.com/mrhrifat" target='_blank'>
-                                    {<PersonIcon size='medium' fill='#000' aria-label="Add new item" />}
+                                    {<PersonIcon size='medium' fill='#000'  />}
                                 </a>
                             </li>
                             <li className="nav-item"  >
                                 <a className="nav-link" href="https://github.com/mrhrifat/web-badge/fork" target='_blank'>
-                                    {<RepoForkedIcon size='medium' fill='#000' aria-label="Add new item" />}
+                                    {<RepoForkedIcon size='medium' fill='#000'  />}
                                 </a>
                             </li>
                             <li className="nav-item"  >
                                 <a className="nav-link" href="https://github.com/mrhrifat/web-badge" target='_blank'>
-                                    {<StarIcon size='medium' fill='#000' aria-label="Add new item" />}
+                                    {<StarIcon size='medium' fill='#000'  />}
                                 </a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="https://github.com/mrhrifat/web-badge/blob/master/LICENSE.md" target='_blank'>
-                                    {<LawIcon size='medium' fill='#000' aria-label="Add new item" />}
+                                    {<LawIcon size='medium' fill='#000'  />}
                                 </a>
                             </li>
                             <li className="nav-item"  >
                                 <a className="nav-link" href="#" target='_blank'>
-                                    {<BugIcon size='medium' fill='#000' aria-label="Add new item" />}
+                                    {<BugIcon size='medium' fill='#000'  />}
                                 </a>
                             </li>
                             <li className="nav-item" >
                                 <a className="nav-link" href="#" target='_blank'>
-                                    {<HeartIcon size='medium' fill='#000' aria-label="Add new item" />}
+                                    {<HeartIcon size='medium' fill='#000'  />}
                                 </a>
                             </li>
                         </ul>
