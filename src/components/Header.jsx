@@ -1,17 +1,22 @@
 import React from 'react';
 import InlineSVG from 'svg-inline-react';
+import { EyeIcon } from '@primer/octicons-react';
+import millify from 'millify';
 const simpleIcons = require('simple-icons');
 
-const Header = () => {
+const Header = ({ visitor }) => {
     return (
         <div className='container py-5'>
             <div className="row">
-                <div className="col-md-6">
+                <div className="col-md-6 ">
                     <h3>Web Badge</h3>
-                    <p>2152 Free Badges of popular brands</p>
+                    <p className='m-0'>2152 Free Badges of popular brands</p>
+                    <div className="">
+                        <EyeIcon /> {millify(visitor)} Visitor
+                    </div>
                 </div>
                 <div className="col-md-6" >
-                    <ul className="nav justify-content-end">
+                    <ul className="nav justify-content-end justify-content-sm-center">
                         <li className="nav-item" style={{ width: '70px' }} >
                             <a className="nav-link" href="https://github.com/mrhrifat/web-badge" target="_blank">
                                 {<InlineSVG src={simpleIcons.Get('github').svg} />}
