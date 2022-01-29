@@ -36,8 +36,8 @@ class Badge extends Component {
         return (
             <CopyToClipboard text={this.state.value}>
                 <div
-                    className="card-body text-center overflow-auto"
-                    style={{ minHeight: '80px', cursor: 'pointer' }}
+                    className="card-body text-center"
+                    style={{ minHeight: '80px', cursor: 'pointer', overflow: 'overlay' }}
                     onMouseEnter={() => this.toggleHover()}
                     onMouseLeave={() => this.toggleHover()}
                     // onClick={() => this.toggleClick(markdown)}
@@ -45,8 +45,8 @@ class Badge extends Component {
                 >
 
                     {this.state.isHover ?
-                        this.state.copied ? <CheckIcon aria-label="Add new item" /> :
-                            <CopyIcon aria-label="Add new item" />
+                        this.state.copied ? <CheckIcon /> :
+                            <CopyIcon />
                         :
                         <ReactMarkdown children={markdown} />
                     }
