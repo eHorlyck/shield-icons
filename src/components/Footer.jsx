@@ -19,7 +19,9 @@ const Footer = () => {
                     </button>
                 </div>
             </div>
-            
+            <div className="col-md-12 text-center">
+                <p style={{ fontSize: '14px', fontWeight: 'bold' }}>Made with <span style={{ fontSize: '20px', color: '#E23744' }}>❤️</span> for Developers</p>
+            </div>
         </div>
     )
 };
