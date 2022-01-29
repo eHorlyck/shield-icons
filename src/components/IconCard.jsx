@@ -43,6 +43,24 @@ const IconCard = ({ data }) => {
                                     </Suspense>
                                 </>
 
+                                <div className="d-flex">
+                                    <div className="card-footer w-75" style={{ backgroundColor: `#${item.hex}`, cursor: 'pointer' }}>
+                                        <small className='text-light text-center'>
+                                            {
+                                                `#${item.hex}`
+                                            }
+                                        </small>
+                                    </div>
+                                    <div className={`${classes.hoverIcon} card-footer w-25`} style={{ cursor: 'pointer', borderRadius: '0 0 14px 0' }} onClick={()=>{
+                                        < DownloadLink
+                                        label={<DownloadIcon fill='#333' />}
+                                        filename={`${item.title}.svg`}
+                                        exportFile={() => item.svg}
+                                    />
+                                    }}>
+                                        
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
