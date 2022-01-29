@@ -1,8 +1,12 @@
 import React, { useState, Suspense, lazy } from 'react'
 import Spinner from './Spinner'
+import DownloadLink from "react-download-link";
+import { DownloadIcon } from '@primer/octicons-react'
+import classes from '../styles/iconCard.module.css'
 const SVGIcon = lazy(() => import('./SVGIcon'))
 const Badge = lazy(() => import('./Badge'))
 const Search = lazy(() => import('./Search'))
+
 
 const IconCard = ({ data }) => {
 
@@ -27,7 +31,7 @@ const IconCard = ({ data }) => {
                         }
                     }).map((item) => (
                         <div className="col-md-3 col-sm-4 col-xs-6 my-2" key={item.slug}>
-                            <div className='card'>
+                            <div className='card' style={{ borderRadius: '1rem' }}>
                                 <div className='card-img-fluid' style={{ width: '20%', margin: '10px auto', display: 'block' }}>
                                     <Suspense fallback={<Spinner />}>
                                         <SVGIcon svg={item.svg} alt={item.title} />
@@ -39,15 +43,6 @@ const IconCard = ({ data }) => {
                                     </Suspense>
                                 </>
 
-                                <div
-                                    className="card-footer text-center"
-                                    style={{ backgroundColor: `#555555`, cursor: 'pointer' }}
-                                >
-                                    <small className='text-light'>
-                                        {
-                                            `${item.title}`
-                                        }
-                                    </small>
                                 </div>
                             </div>
                         </div>
