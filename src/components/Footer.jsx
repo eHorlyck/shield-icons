@@ -13,7 +13,11 @@ const Footer = () => {
                         <br /> All of your support will go for donation.
                     </p>
                 </div>
-                
+                <div className="col-md-4 align-self-center">
+                    <button className='btn btn-primary' style={{ backgroundColor: '#1da1f2', border: 'none' }}>
+                        <a href='https://twitter.com/intent/tweet?url=https://webbadges.netlify.app&text=Web Badge: free Badge for Markdown or Web.' target='_blank' rel="noopener noreferrer" style={{ textDecoration: 'none', color: '#fff' }}>Share on Twitter</a>
+                    </button>
+                </div>
             </div>
             
         </div>
