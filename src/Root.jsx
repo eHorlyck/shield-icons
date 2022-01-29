@@ -44,7 +44,9 @@ class Root extends Component {
                 <Suspense fallback={<Spinner />}>
                     {<IconCard data={data} />}
                 </Suspense>
-              
+                <Suspense fallback={<Spinner />}>
+                    <Footer />
+                </Suspense>
             </>
         )
     }
