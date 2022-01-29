@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { RepoForkedIcon, PersonIcon, LawIcon, StarIcon, HeartIcon, BugIcon } from '@primer/octicons-react'
-
+import classes from '../styles/search.module.css'
 
 class Search extends Component {
 
@@ -13,9 +13,9 @@ class Search extends Component {
         // const visitor = this.props.visitor
         // console.log(visitor)
         return (
-            <div className='container pb-5' >
+            <div className='container pb-4 pt-1 sticky-top'>
                 <div className="row">
-                    <div className="col-md-4 align-self-center ">
+                    <div className="col-md-4">
                         <input
                             type="text"
                             className="form-control"
@@ -24,36 +24,36 @@ class Search extends Component {
                         />
                     </div>
 
-                    <div className="col-md-8 " >
-                        <ul className="nav justify-content-md-end justify-content-sm-center align-items-center">
-                            <li className="nav-item"  >
+                    <div className="col-md-8" >
+                        <ul className="nav justify-content-md-end justify-content-sm-center">
+                            <li className="nav-item" data-toggle="tooltip" title='Author' className={classes.hoverIcon} >
                                 <a className="nav-link" href="https://github.com/mrhrifat" target='_blank' rel="noopener noreferrer">
-                                    {<PersonIcon size='medium' fill='#000' />}
+                                    {<PersonIcon size='22' fill='#000' />}
                                 </a>
                             </li>
-                            <li className="nav-item"  >
+                            <li className="nav-item" data-toggle="tooltip" title='Forked Repository' className={classes.hoverIcon} >
                                 <a className="nav-link" href="https://github.com/mrhrifat/web-badge/fork" target='_blank' rel="noopener noreferrer">
-                                    {<RepoForkedIcon size='medium' fill='#000' />}
+                                    {<RepoForkedIcon size='22' fill='#000' />}
                                 </a>
                             </li>
-                            <li className="nav-item"  >
+                            <li className="nav-item" data-toggle="tooltip" title='Star Repository' className={classes.hoverIcon} >
                                 <a className="nav-link" href="https://github.com/mrhrifat/web-badge" target='_blank' rel="noopener noreferrer">
-                                    {<StarIcon size='medium' fill='#000' />}
+                                    {<StarIcon size='22' fill='#000' />}
                                 </a>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item" data-toggle="tooltip" title='License' className={classes.hoverIcon} >
                                 <a className="nav-link" href="https://github.com/mrhrifat/web-badge/blob/master/LICENSE.md" target='_blank' rel="noopener noreferrer">
-                                    {<LawIcon size='medium' fill='#000' />}
+                                    {<LawIcon size='22' fill='#000' />}
                                 </a>
                             </li>
-                            <li className="nav-item"  >
+                            <li className="nav-item" data-toggle="tooltip" title='Bug Report' className={classes.hoverIcon} >
                                 <a className="nav-link" href="https://github.com/mrhrifat/web-badge/issues/new" target='_blank' rel="noopener noreferrer">
-                                    {<BugIcon size='medium' fill='#000' />}
+                                    {<BugIcon size='22' fill='#000' />}
                                 </a>
                             </li>
-                            <li className="nav-item" >
+                            <li className="nav-item" data-toggle="tooltip" title='Support' className={classes.hoverIcon} >
                                 <a className="nav-link" href="https://github.com/mrhrifat/web-badge#support" target='_blank' rel="noopener noreferrer">
-                                    {<HeartIcon size='medium' fill='#000' />}
+                                    {<HeartIcon size='22' fill='#000' />}
                                 </a>
                             </li>
                         </ul>
