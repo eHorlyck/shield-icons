@@ -4,16 +4,9 @@ import classes from '../styles/search.module.css'
 
 class Search extends Component {
 
-    state = {
-        download: 'svg'
-    }
 
     handleDownload = (e) => {
-        e.preventDefault()
-        console.log(e.target.value)
-        this.setState({
-            download: e.target.value
-        })
+        this.props.downloadType(e.target.value)
     }
 
     handleChange = (e) => {
@@ -23,6 +16,7 @@ class Search extends Component {
     render() {
         // const visitor = this.props.visitor
         // console.log(visitor)
+        
         return (
             <div className={`${classes.navbar} container pb-4 pt-1 `}>
                 <div className="row">
@@ -39,10 +33,10 @@ class Search extends Component {
                         <div className="row" >
                             <div className="col-md-5">
                                 <div className="btn-group" role="group">
-                                    <button className={`btn ${classes.custom}`} onClick={this.handleDownload}>
+                                    <button className={`btn ${classes.custom}`} >
                                         <SunIcon />
                                     </button>
-                                    <button className={`btn ${classes.custom}`} onClick={this.handleDownload}>
+                                    <button className={`btn ${classes.custom}`} >
                                         <MoonIcon />
                                     </button>
                                 </div>
@@ -50,11 +44,13 @@ class Search extends Component {
 
                             <div className="col-md-5">
                                 <div className="btn-group" role="group">
-                                    <button className={`btn btn-secondary ${classes.removeFocus}`}>
-                                        <SunIcon />
+                                    <button className={`btn ${classes.custom}`} value='svg'
+                                        onClick={this.handleDownload}>
+                                        SVG
                                     </button>
-                                    <button className={`btn btn-secondary ${classes.removeFocus}`}>
-                                        <MoonIcon />
+                                    <button className={`btn ${classes.custom}`} value='pdf'
+                                        onClick={this.handleDownload}>
+                                        PDF
                                     </button>
                                 </div>
                             </div>
