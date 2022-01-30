@@ -25,11 +25,14 @@ class Search extends Component {
                         />
                     </div>
 
-                <div className="col-md-1">
-                    
-                </div>
+                    <div className="col-md-2 ">
+                        <div className="d-flex justify-content-around border">
+                            <button className="btn">SVG</button>
+                            <button className="btn">PDF</button>
+                        </div>
+                    </div>
 
-                    <div className="col-md-8" >
+                    <div className="col-md-7" >
                         <ul className="nav justify-content-md-end justify-content-sm-center">
                             <li className="nav-item" data-toggle="tooltip" title='Author' className={classes.hoverIcon} >
                                 <a className="nav-link" href="https://github.com/mrhrifat" target='_blank' rel="noopener noreferrer">
