@@ -4,11 +4,21 @@ import classes from '../styles/search.module.css'
 
 class Search extends Component {
 
+    state = {
+        download: 'svg'
+    }
+
+    handleDownload = (e) => {
+        e.preventDefault()
+        console.log(e.target.value)
+        this.setState({
+            download: e.target.value
+        })
+    }
 
     handleChange = (e) => {
         this.props.search(e.target.value)
     }
-
 
     render() {
         // const visitor = this.props.visitor
@@ -26,20 +36,27 @@ class Search extends Component {
                     </div>
 
                     <div className="col-md-3">
-                        <div className="row justify-content-around" style={{ borderRadius: '5px' }}>
-                            <div className="col-md-5" style={{ border: '1px solid #ced4da', borderRadius: '0.25rem' }}>
-                                <button className="btn" style={{ padding: '9px 2px', fontSize: '10px' }}>
-                                    <SunIcon/>
-                                </button>
-                                <button className="btn" style={{ padding: '9px 2px', fontSize: '10px' }}>
-                                    <MoonIcon/>
-                                </button>
+                        <div className="row" >
+                            <div className="col-md-5">
+                                <div className="btn-group" role="group">
+                                    <button className={`btn ${classes.custom}`} onClick={this.handleDownload}>
+                                        <SunIcon />
+                                    </button>
+                                    <button className={`btn ${classes.custom}`} onClick={this.handleDownload}>
+                                        <MoonIcon />
+                                    </button>
+                                </div>
                             </div>
 
-                            <div className="col-md-5" style={{ border: '1px solid #ced4da', borderRadius: '0.25rem' }}>
-                                <button className="btn" style={{ padding: '9px 2px', fontSize: '10px' }}>SVG</button>
-                                <span className={classes.line}></span>
-                                <button className="btn" style={{ padding: '9px 2px', fontSize: '10px' }}>PDF</button>
+                            <div className="col-md-5">
+                                <div className="btn-group" role="group">
+                                    <button className={`btn btn-secondary ${classes.removeFocus}`}>
+                                        <SunIcon />
+                                    </button>
+                                    <button className={`btn btn-secondary ${classes.removeFocus}`}>
+                                        <MoonIcon />
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
