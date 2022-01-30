@@ -2,6 +2,7 @@ import React, { useState, Suspense, lazy } from 'react'
 import Spinner from './Spinner'
 import DownloadLink from "react-download-link";
 import { DownloadIcon } from '@primer/octicons-react'
+import { jsPDF } from 'jspdf'
 import classes from '../styles/iconCard.module.css'
 import CopyHex from './CopyHex';
 const SVGIcon = lazy(() => import('./SVGIcon'))
@@ -15,11 +16,13 @@ const IconCard = ({ data }) => {
     const [downloadType, setDownloadType] = useState('svg')
     // console.log(visitor)
 
+    const doc = new jsPDF()
+
 
     return (
         <>
             <Suspense fallback={<Spinner />}>
-                <Search search={(e) => setSearch(e)} downloadType={(e) => setDownloadType(e)} />
+                <Search search={(e) => setSearch(e)} downloadType={(e) => setDownloadType(e)} type={downloadType} />
             </Suspense>
 
 
@@ -67,7 +70,11 @@ const IconCard = ({ data }) => {
                                             < DownloadLink
                                                 label={<DownloadIcon fill='#333' />}
                                                 filename={`${item.title}.${downloadType}`}
-                                                exportFile={() => `${item.svg}`}
+                                                exportFile={() => downloadType
+                                                    ? 'svg'
+                                                        ? item.svg
+                                                        : doc.text(`${item.svg}`, 10, 10) && doc.save(`${item.title}.pdf`)
+                                                    : 'svg'}
                                                 className={`${classes.hoverIcon} card-footer w-25`}
                                                 style={{ cursor: 'pointer', borderRadius: '0 0 14px 0' }}
                                             />
