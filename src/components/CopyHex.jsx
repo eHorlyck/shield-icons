@@ -24,7 +24,27 @@ class CopyHex extends Component {
         const { hex } = this.props
 
         return (
-            
+            <CopyToClipboard text={this.state.value}>
+                <div
+                    onMouseEnter={() => this.toggleHover()}
+                    onMouseLeave={() => this.toggleHover()}
+                    onClick={() => this.setState({ value: `#${hex}`, copied: true })}
+                >
+
+                    {this.state.isHover
+                        ?
+                        this.state.copied
+                            ?
+                            <CheckIcon />
+                            :
+                            <CopyIcon />
+                        :
+                        <ReactMarkdown children={`#${hex}`} />
+                    }
+
+                </div>
+
+            </CopyToClipboard>
         )
     }
 }
