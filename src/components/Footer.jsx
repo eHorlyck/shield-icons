@@ -11,6 +11,7 @@ const Footer = () => {
                         <br /> Use <a href='https://github.com/mrhrifat/web-badge' target='_blank' rel="noopener noreferrer">GitHub</a> for requests, corrections and report.
                         <br /> If you appreciate what I do and wish to support my work, you can  <a href='https://github.com/mrhrifat/web-badge#support' target='_blank' rel="noopener noreferrer">support</a> me.
                         <br /> All of your support will go for donation.
+                        <br />Badge or SVG is missing? <a href="https://github.com/mrhrifat/web-badge/issues/new" target='_blank' rel="noopener noreferrer" >Submit a request</a>
                     </p>
                 </div>
                 <div className="col-md-4 align-self-center">
