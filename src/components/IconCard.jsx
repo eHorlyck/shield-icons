@@ -12,11 +12,14 @@ const Search = lazy(() => import('./Search'))
 const IconCard = ({ data }) => {
 
     const [search, setSearch] = useState('')
+    const [downloadType, setDownloadType] = useState('svg')
     // console.log(visitor)
+
+
     return (
         <>
             <Suspense fallback={<Spinner />}>
-                <Search search={(e) => setSearch(e)} />
+                <Search search={(e) => setSearch(e)} downloadType={(e) => setDownloadType(e)} />
             </Suspense>
 
 
@@ -63,8 +66,8 @@ const IconCard = ({ data }) => {
                                         <>
                                             < DownloadLink
                                                 label={<DownloadIcon fill='#333' />}
-                                                filename={`${item.title}.svg`}
-                                                exportFile={() => item.svg}
+                                                filename={`${item.title}.${downloadType}`}
+                                                exportFile={() => `${item.svg}`}
                                                 className={`${classes.hoverIcon} card-footer w-25`}
                                                 style={{ cursor: 'pointer', borderRadius: '0 0 14px 0' }}
                                             />
