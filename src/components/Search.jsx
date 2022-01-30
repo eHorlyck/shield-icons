@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { RepoForkedIcon, PersonIcon, LawIcon, StarIcon, HeartIcon, BugIcon } from '@primer/octicons-react'
+import { RepoForkedIcon, PersonIcon, LawIcon, StarIcon, HeartIcon, BugIcon, SunIcon, MoonIcon } from '@primer/octicons-react'
 import classes from '../styles/search.module.css'
 
 class Search extends Component {
@@ -26,13 +26,19 @@ class Search extends Component {
                     </div>
 
                     <div className="col-md-3">
-                        <div className="row" style={{ borderRadius: '5px' }}>
-                            <div className="col-md-6 border">
-                                <button className="btn" style={{ padding: '9px 2px', fontSize: '10px' }}>SVG</button>
-                                <button className="btn" style={{ padding: '9px 2px', fontSize: '10px' }}>PDF</button>
+                        <div className="row justify-content-around" style={{ borderRadius: '5px' }}>
+                            <div className="col-md-5" style={{ border: '1px solid #ced4da', borderRadius: '0.25rem' }}>
+                                <button className="btn" style={{ padding: '9px 2px', fontSize: '10px' }}>
+                                    <SunIcon/>
+                                </button>
+                                <button className="btn" style={{ padding: '9px 2px', fontSize: '10px' }}>
+                                    <MoonIcon/>
+                                </button>
                             </div>
-                            <div className="col-md-6 border">
+
+                            <div className="col-md-5" style={{ border: '1px solid #ced4da', borderRadius: '0.25rem' }}>
                                 <button className="btn" style={{ padding: '9px 2px', fontSize: '10px' }}>SVG</button>
+                                <span className={classes.line}></span>
                                 <button className="btn" style={{ padding: '9px 2px', fontSize: '10px' }}>PDF</button>
                             </div>
                         </div>
