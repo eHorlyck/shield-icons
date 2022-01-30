@@ -16,7 +16,7 @@ class Search extends Component {
         return (
             <div className={`${classes.navbar} container pb-4 pt-1 `}>
                 <div className="row">
-                    <div className="col-md-4">
+                    <div className="col-md-3">
                         <input
                             type="text"
                             className="form-control"
@@ -24,6 +24,10 @@ class Search extends Component {
                             onChange={this.handleChange}
                         />
                     </div>
+
+                <div className="col-md-1">
+                    
+                </div>
 
                     <div className="col-md-8" >
                         <ul className="nav justify-content-md-end justify-content-sm-center">
