@@ -9,11 +9,12 @@ class Search extends Component {
         this.props.search(e.target.value)
     }
 
+
     render() {
         // const visitor = this.props.visitor
         // console.log(visitor)
         return (
-            <div className='container pb-4 pt-1 sticky-top'>
+            <div className={`${classes.navbar} container pb-4 pt-1 `}>
                 <div className="row">
                     <div className="col-md-4">
                         <input
@@ -59,7 +60,7 @@ class Search extends Component {
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div >
         )
     }
 }
