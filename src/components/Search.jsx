@@ -16,7 +16,9 @@ class Search extends Component {
     render() {
         // const visitor = this.props.visitor
         // console.log(visitor)
-        
+        // console.log(this.props.type)
+        const { type } = this.props
+
         return (
             <div className={`${classes.navbar} container pb-4 pt-1 `}>
                 <div className="row">
@@ -44,11 +46,11 @@ class Search extends Component {
 
                             <div className="col-md-5">
                                 <div className="btn-group" role="group">
-                                    <button className={`btn ${classes.custom}`} value='svg'
+                                    <button className={type === 'svg' ? `btn btn-secondary ${classes.custom}` : `btn ${classes.custom}`} value='svg'
                                         onClick={this.handleDownload}>
                                         SVG
                                     </button>
-                                    <button className={`btn ${classes.custom}`} value='pdf'
+                                    <button className={type === 'pdf' ? `btn btn-secondary ${classes.custom}` : `btn ${classes.custom}`} value='pdf'
                                         onClick={this.handleDownload}>
                                         PDF
                                     </button>
