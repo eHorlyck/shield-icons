@@ -16,7 +16,7 @@ class Search extends Component {
         return (
             <div className={`${classes.navbar} container pb-4 pt-1 `}>
                 <div className="row">
-                    <div className="col-md-3">
+                    <div className="col-md-4">
                         <input
                             type="text"
                             className="form-control"
@@ -25,37 +25,43 @@ class Search extends Component {
                         />
                     </div>
 
-                    <div className="col-md-2 ">
-                        <div className="d-flex justify-content-around border">
-                            <button className="btn">SVG</button>
-                            <button className="btn">PDF</button>
+                    <div className="col-md-3">
+                        <div className="row" style={{ borderRadius: '5px' }}>
+                            <div className="col-md-6 border">
+                                <button className="btn" style={{ padding: '9px 2px', fontSize: '10px' }}>SVG</button>
+                                <button className="btn" style={{ padding: '9px 2px', fontSize: '10px' }}>PDF</button>
+                            </div>
+                            <div className="col-md-6 border">
+                                <button className="btn" style={{ padding: '9px 2px', fontSize: '10px' }}>SVG</button>
+                                <button className="btn" style={{ padding: '9px 2px', fontSize: '10px' }}>PDF</button>
+                            </div>
                         </div>
                     </div>
 
-                    <div className="col-md-7" >
+                    <div className="col-md-5" >
                         <ul className="nav justify-content-md-end justify-content-sm-center">
                             <li className={`nav-item ${classes.hoverIcon}`} data-toggle="tooltip" title='Author'>
-                                <a className="nav-link" href="https://github.com/mrhrifat" target='_blank' rel="noopener noreferrer">
+                                <a className="nav-link" href="https://github.com/mrhrifat" target='_blank' rel="noopener noreferrer" style={{ padding: '7px 10px' }}>
                                     {<PersonIcon size='22' fill='#000' />}
                                 </a>
                             </li>
                             <li className={`nav-item ${classes.hoverIcon}`} data-toggle="tooltip" title='Forked Repository'>
-                                <a className="nav-link" href="https://github.com/mrhrifat/web-badge/fork" target='_blank' rel="noopener noreferrer">
+                                <a className="nav-link" href="https://github.com/mrhrifat/web-badge/fork" target='_blank' rel="noopener noreferrer" style={{ padding: '7px 10px' }}>
                                     {<RepoForkedIcon size='22' fill='#000' />}
                                 </a>
                             </li>
                             <li className={`nav-item ${classes.hoverIcon}`} data-toggle="tooltip" title='Star Repository'>
-                                <a className="nav-link" href="https://github.com/mrhrifat/web-badge" target='_blank' rel="noopener noreferrer">
+                                <a className="nav-link" href="https://github.com/mrhrifat/web-badge" target='_blank' rel="noopener noreferrer" style={{ padding: '7px 10px' }}>
                                     {<StarIcon size='22' fill='#000' />}
                                 </a>
                             </li>
                             <li className={`nav-item ${classes.hoverIcon}`} data-toggle="tooltip" title='License'>
-                                <a className="nav-link" href="https://github.com/mrhrifat/web-badge/blob/master/LICENSE.md" target='_blank' rel="noopener noreferrer">
+                                <a className="nav-link" href="https://github.com/mrhrifat/web-badge/blob/master/LICENSE.md" target='_blank' rel="noopener noreferrer" style={{ padding: '7px 10px' }}>
                                     {<LawIcon size='22' fill='#000' />}
                                 </a>
                             </li>
                             <li className={`nav-item ${classes.hoverIcon}`} data-toggle="tooltip" title='Bug Report'>
-                                <a className="nav-link" href="https://github.com/mrhrifat/web-badge/issues/new" target='_blank' rel="noopener noreferrer">
+                                <a className="nav-link" href="https://github.com/mrhrifat/web-badge/issues/new" target='_blank' rel="noopener noreferrer" style={{ padding: '7px 10px' }}>
                                     {<BugIcon size='22' fill='#000' />}
                                 </a>
                             </li>
