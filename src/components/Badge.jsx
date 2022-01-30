@@ -44,8 +44,12 @@ class Badge extends Component {
                     onClick={() => this.setState({ value: markdown, copied: true })}
                 >
 
-                    {this.state.isHover ?
-                        this.state.copied ? <CheckIcon /> :
+                    {this.state.isHover
+                        ?
+                        this.state.copied
+                            ?
+                            <CheckIcon />
+                            :
                             <CopyIcon />
                         :
                         <ReactMarkdown children={markdown} />
