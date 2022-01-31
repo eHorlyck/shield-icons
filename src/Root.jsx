@@ -36,13 +36,15 @@ class Root extends Component {
         // console.log(this.state.visitor)
         // const visitor = this.state.visitor
         // console.log(visitor)
+        // console.log(this.props)
+        
         return (
             <>
                 <Suspense fallback={<Spinner />}>
                     <Header />
                 </Suspense>
                 <Suspense fallback={<Spinner />}>
-                    {<IconCard data={data} />}
+                    {<IconCard data={data}/>}
                 </Suspense>
                 <Suspense fallback={<Spinner />}>
                     <Footer />
