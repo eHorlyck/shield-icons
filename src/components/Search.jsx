@@ -1,8 +1,16 @@
 import React, { Component } from 'react';
-import { RepoForkedIcon, PersonIcon, LawIcon, StarIcon, HeartIcon, BugIcon, SunIcon, MoonIcon } from '@primer/octicons-react'
+import { RepoForkedIcon, PersonIcon, LawIcon, StarIcon, HeartIcon, BugIcon, MoonIcon, SunIcon } from '@primer/octicons-react'
 import classes from '../styles/search.module.css'
 
+
+
 class Search extends Component {
+
+
+    // handleTheme = e => {
+    //     console.log(e.target.value)
+    //     this.props.theme(e.target.value)
+    // }
 
 
     handleDownload = (e) => {
@@ -17,6 +25,8 @@ class Search extends Component {
         // const visitor = this.props.visitor
         // console.log(visitor)
         // console.log(this.props.type)
+        // console.log(this.props.mode)
+        // console.log(this.props)
         const { type } = this.props
 
         return (
@@ -33,26 +43,26 @@ class Search extends Component {
 
                     <div className="col-md-3">
                         <div className="row" >
-                            <div className="col-md-5">
-                                <div className="btn-group" role="group">
-                                    <button className={`btn ${classes.custom}`} >
-                                        <SunIcon />
+                            {/* <div className="col-md-5">
+                                <div className="btn-group" role="group" style={{ border: '1px solid #6c757d', borderRadius: '0.25rem' }}>
+                                    <button className={'light' ? `btn btn-secondary ${classes.custom}` : `btn ${classes.custom}`} id="option1" onClick={this.handleTheme} value='light'>
+                                        D
                                     </button>
-                                    <button className={`btn ${classes.custom}`} >
-                                        <MoonIcon />
+                                    <button className={'dark' ? `btn btn-secondary ${classes.custom}` : `btn ${classes.custom}`} onClick={this.handleTheme} value='dark'>
+                                        N
                                     </button>
                                 </div>
-                            </div>
+                            </div> */}
 
                             <div className="col-md-5">
-                                <div className="btn-group" role="group">
+                                <div className="btn-group" role="group" style={{ border: '1px solid #6c757d', borderRadius: '0.25rem' }}>
                                     <button className={type === 'svg' ? `btn btn-secondary ${classes.custom}` : `btn ${classes.custom}`} value='svg'
                                         onClick={this.handleDownload}>
                                         SVG
                                     </button>
-                                    <button className={type === 'pdf' ? `btn btn-secondary ${classes.custom}` : `btn ${classes.custom}`} value='pdf'
+                                    <button className={type === 'png' ? `btn btn-secondary ${classes.custom}` : `btn ${classes.custom}`} value='png'
                                         onClick={this.handleDownload}>
-                                        PDF
+                                        PNG
                                     </button>
                                 </div>
                             </div>
