@@ -2,7 +2,6 @@ import React, { useState, Suspense, lazy } from 'react'
 import Spinner from './Spinner'
 import DownloadLink from "react-download-link";
 import { DownloadIcon } from '@primer/octicons-react'
-import { jsPDF } from 'jspdf'
 import classes from '../styles/iconCard.module.css'
 import CopyHex from './CopyHex';
 const SVGIcon = lazy(() => import('./SVGIcon'))
@@ -10,19 +9,19 @@ const Badge = lazy(() => import('./Badge'))
 const Search = lazy(() => import('./Search'))
 
 
-const IconCard = ({ data }) => {
+const IconCard = ({ data}) => {
 
     const [search, setSearch] = useState('')
     const [downloadType, setDownloadType] = useState('svg')
     // console.log(visitor)
-
-    const doc = new jsPDF()
+    // console.log(theme)
+    // console.log(setTheme)
 
 
     return (
         <>
             <Suspense fallback={<Spinner />}>
-                <Search search={(e) => setSearch(e)} downloadType={(e) => setDownloadType(e)} type={downloadType} />
+                <Search search={(e) => setSearch(e)} downloadType={(e) => setDownloadType(e)} type={downloadType}/>
             </Suspense>
 
 
@@ -61,7 +60,6 @@ const IconCard = ({ data }) => {
                                             <small className={`${classes.custom} text-light text-center`}>
                                                 {/* {
                                                 `#${item.hex}`
-
                                             } */}
                                                 < CopyHex hex={item.hex} />
                                             </small>
@@ -70,11 +68,7 @@ const IconCard = ({ data }) => {
                                             < DownloadLink
                                                 label={<DownloadIcon fill='#333' />}
                                                 filename={`${item.title}.${downloadType}`}
-                                                exportFile={() => downloadType
-                                                    ? 'svg'
-                                                        ? item.svg
-                                                        : doc.text(`${item.svg}`, 10, 10) && doc.save(`${item.title}.pdf`)
-                                                    : 'svg'}
+                                                exportFile={() => item.svg}
                                                 className={`${classes.hoverIcon} card-footer w-25`}
                                                 style={{ cursor: 'pointer', borderRadius: '0 0 14px 0' }}
                                             />
