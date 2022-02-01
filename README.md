@@ -14,6 +14,15 @@
   <img src="https://img.shields.io/github/license/mrhrifat/web-badge?style=for-the-badge">
 </div>
 
+## Features
+- [x] Brand SVG Logo
+- [x] Brand Badge
+- [x] Logo Hex Code
+- [x] Copy Badge & Hex Code
+- [x] Download Brand Logo in SVG or PNG Format
+- [ ] Light Dark Theme
+- [ ] More Fast
+
 ## Support
 👍🏻 If you're using this project & happy with it or you appreciate what I do and wish to support my work, you can consider by 
 - Support To Buy Ko-fi 🍵
