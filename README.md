@@ -3,8 +3,6 @@
   <h2>Web Badge</h2>
   Web Badge will create about 2152 amazing badges to <br> use in GitHub Markdown or Any Web Pages.<br><br>
   
-  <img src="https://img.shields.io/github/license/mrhrifat/web-badge?style=for-the-badge">
-
   <img src="https://img.shields.io/github/forks/mrhrifat/web-badge?style=for-the-badge">
 
   <img src="https://img.shields.io/github/stars/mrhrifat/web-badge?style=for-the-badge">
@@ -12,6 +10,8 @@
   <img src="https://img.shields.io/github/issues/mrhrifat/web-badge?style=for-the-badge">
 
   <img src="https://img.shields.io/github/issues-pr/mrhrifat/web-badge?style=for-the-badge">
+
+  <img src="https://img.shields.io/github/license/mrhrifat/web-badge?style=for-the-badge">
 </div>
 
 ## Support
