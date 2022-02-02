@@ -78,7 +78,7 @@ const IconCard = ({ data }) => {
                                             {
                                                 downloadType === 'svg' ?
                                                     < DownloadLink
-                                                        className={`card-footer w-25 ${classes.icon} `}
+                                                        className={`card-footer w-25 text-center ${classes.icon} `}
                                                         style={{ borderRadius: '0 0 14px 0' }}
                                                         label={<DownloadIcon fill='#333' />}
                                                         filename={`${item.title}.${downloadType}`}
@@ -86,7 +86,7 @@ const IconCard = ({ data }) => {
                                                     /> :
 
                                                     <button
-                                                        className={`${classes.icon} card-footer w-25`}
+                                                        className={`${classes.icon} card-footer  w-25`}
                                                         style={{ borderRadius: '0 0 14px 0', border: 'none', borderTop: '1px solid rgba(0, 0, 0, 0.125)' }}
                                                         onClick={() => downloadPNG(item.svg, `${item.title}.${downloadType}`)}
                                                     >
