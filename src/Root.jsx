@@ -1,6 +1,6 @@
 import React, { Component, Suspense, lazy } from 'react'
 import simpleClass from './services/main'
-import {Spinner} from './components'
+import { Spinner } from './components'
 const Header = lazy(() => import('./components/Header'))
 const BadgeCard = lazy(() => import('./components/BadgeCard'))
 const Footer = lazy(() => import('./components/Footer'))
