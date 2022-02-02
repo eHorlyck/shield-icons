@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactMarkdown from 'react-markdown';
+import PropTypes from 'prop-types';
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import { CopyIcon, CheckIcon } from '@primer/octicons-react'
 
@@ -16,7 +17,7 @@ class Badge extends Component {
     toggleClick(markdown) {
         this.setState({
             value: markdown
-        }) 
+        })
     }
 
     render() {
@@ -53,3 +54,8 @@ class Badge extends Component {
 };
 
 export default Badge;
+
+Badge.propTypes = {
+    title: PropTypes.string,
+    hex: PropTypes.string,
+}
