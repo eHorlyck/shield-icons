@@ -2,7 +2,7 @@ import React, { Component, Suspense, lazy } from 'react'
 import simpleClass from './services/main'
 import Spinner from './components/Spinner'
 const Header = lazy(() => import('./components/Header'))
-const IconCard = lazy(() => import('./components/IconCard'))
+const BadgeCard = lazy(() => import('./components/BadgeCard'))
 const Footer = lazy(() => import('./components/Footer'))
 
 
@@ -27,7 +27,7 @@ class Root extends Component {
                     <Header />
                 </Suspense>
                 <Suspense fallback={<Spinner />}>
-                    {<IconCard data={data}/>}
+                    {<BadgeCard data={data}/>}
                 </Suspense>
                 <Suspense fallback={<Spinner />}>
                     <Footer />
