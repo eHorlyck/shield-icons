@@ -14,7 +14,7 @@ class Badge extends Component {
         this.setState({ isHover: !this.state.isHover })
     }
     toggleClick(markdown) {
-        // console.log(markdown)
+        
         this.setState({
             value: markdown
         })
@@ -27,12 +27,6 @@ class Badge extends Component {
         const relpaceTitle = title.replace(matchTitle, '%20')
         const markdown = `![](https://img.shields.io/badge/${relpaceTitle}-${hex}?style=for-the-badge&logo=${relpaceTitle}&logoColor=white)`
 
-        // console.log(title[31])
-        // console.log(hex)
-        // console.log(title.match(matchTitle)
-        // console.log(markdown)
-        // const markdown=`## Hi`
-
         return (
             <CopyToClipboard text={this.state.value}>
                 <div
@@ -40,7 +34,6 @@ class Badge extends Component {
                     style={{ minHeight: '80px', cursor: 'pointer', overflow: 'overlay' }}
                     onMouseEnter={() => this.toggleHover()}
                     onMouseLeave={() => this.toggleHover()}
-                    // onClick={() => this.toggleClick(markdown)}
                     onClick={() => this.setState({ value: markdown, copied: true })}
                 >
 
