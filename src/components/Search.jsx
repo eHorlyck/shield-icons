@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { RepoForkedIcon, PersonIcon, LawIcon, StarIcon, HeartIcon, BugIcon, MoonIcon, SunIcon } from '@primer/octicons-react'
+import { RepoForkedIcon, PersonIcon, LawIcon, StarIcon, HeartIcon, BugIcon} from '@primer/octicons-react'
 import classes from '../styles/search.module.css'
 
 
