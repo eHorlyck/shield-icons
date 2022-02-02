@@ -14,18 +14,16 @@ class Badge extends Component {
         this.setState({ isHover: !this.state.isHover })
     }
     toggleClick(markdown) {
-        
         this.setState({
             value: markdown
-        })
-
+        }) 
     }
 
     render() {
         const { title, hex } = this.props
         const matchTitle = new RegExp(/\s/g)
         const relpaceTitle = title.replace(matchTitle, '%20')
-        const markdown = `![](https://img.shields.io/badge/${relpaceTitle}-${hex}?style=for-the-badge&logo=${relpaceTitle}&logoColor=white)`
+        const markdown = `${process.env.REACT_APP_MARKDOWN_HEAD}${relpaceTitle}-${hex}${process.env.REACT_APP_MARKDOWN_MIDDLE}logo=${relpaceTitle}${process.env.REACT_APP_MARKDOWN_END}`
 
         return (
             <CopyToClipboard text={this.state.value}>
@@ -47,9 +45,7 @@ class Badge extends Component {
                         :
                         <ReactMarkdown children={markdown} />
                     }
-
                 </div>
-
             </CopyToClipboard>
 
         )
