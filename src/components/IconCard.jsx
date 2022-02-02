@@ -39,14 +39,7 @@ const IconCard = ({ data }) => {
                 <Search search={(e) => setSearch(e)} downloadType={(e) => setDownloadType(e)} type={downloadType} />
             </Suspense>
 
-
             <div className="container">
-
-                {/* <img src={image} alt="icon" /> */}
-
-                {/* <button onClick={() => downloadBase64Data(image, `hi.png`)}>Download</button> */}
-
-
                 <div className="row">
                     {data
                         .filter((item) => {
@@ -77,9 +70,6 @@ const IconCard = ({ data }) => {
                                         <div className="card-footer w-75"
                                             style={{ backgroundColor: `#${item.hex}`, cursor: 'pointer' }}>
                                             <small className={`${classes.custom} text-light text-center`}>
-                                                {/* {
-                                                `#${item.hex}`
-                                            } */}
                                                 < CopyHex hex={item.hex} />
                                             </small>
                                         </div>
@@ -101,9 +91,7 @@ const IconCard = ({ data }) => {
                                                     >
                                                         <DownloadIcon fill='#333' />
                                                     </button>
-
                                             }
-
                                         </>
                                     </div>
                                 </div>
