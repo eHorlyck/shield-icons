@@ -1,42 +1,39 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import { RepoForkedIcon, PersonIcon, LawIcon, StarIcon, HeartIcon, BugIcon } from '@primer/octicons-react'
 import classes from '../styles/all.module.css'
 
 
-class Search extends Component {
+const Search = ({ downloadType, search, type }) => {
 
-    handleDownload = (e) => {
-        this.props.downloadType(e.target.value)
+    const [stickyNav, setStickyNav] = useState(false)
+
+    const handleDownload = (e) => {
+        downloadType(e.target.value)
     }
 
-    handleChange = (e) => {
-        this.props.search(e.target.value)
-    }
+    
 
-    render() {
-
-        const { type } = this.props
-
-        return (
-            <div className={`container pb-4 pt-1 ${classes.navbar}`}>
+    return (
+        <section className={stickyNav ? `${classes.navbar && classes.active} sticky-top` : `${classes.navbar}`} >
+            <div className={`container pb-4 pt-2`}>
                 <div className="row">
                     <div className="col-md-4">
                         <input
                             type="text"
                             className="form-control"
                             placeholder="Search by brand..."
-                            onChange={this.handleChange}
+                            onChange={handleChange}
                         />
                     </div>
 
                     <div className={`col-md-3 ${classes.download}`}>
                         <div className="btn-group" role="group" style={{ border: '1px solid #6c757d', borderRadius: '0.25rem' }}>
                             <button className={type === 'svg' ? `btn btn-secondary ${classes.option}` : `btn ${classes.option}`} value='svg'
-                                onClick={this.handleDownload}>
+                                onClick={handleDownload}>
                                 SVG
                             </button>
                             <button className={type === 'png' ? `btn btn-secondary ${classes.option}` : `btn ${classes.option}`} value='png'
-                                onClick={this.handleDownload}>
+                                onClick={handleDownload}>
                                 PNG
                             </button>
                         </div>
@@ -78,8 +75,8 @@ class Search extends Component {
                     </div>
                 </div>
             </div >
-        )
-    }
+        </section >
+    )
 }
 
 export default Search;
