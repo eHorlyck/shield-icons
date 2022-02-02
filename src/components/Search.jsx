@@ -34,17 +34,19 @@ const Search = ({ downloadType, search, type }) => {
                             className="form-control"
                             placeholder="Search by brand..."
                             onChange={handleChange}
+                            data-toggle="tooltip" 
+                            title='Search by brand'
                         />
                     </div>
 
                     <div className={`col-md-3 ${classes.download}`}>
                         <div className="btn-group" role="group" style={{ border: '1px solid #6c757d', borderRadius: '0.25rem' }}>
                             <button className={type === 'svg' ? `btn btn-secondary ${classes.option}` : `btn ${classes.option}`} value='svg'
-                                onClick={handleDownload}>
+                                onClick={handleDownload} data-toggle="tooltip" title='Download SVG Format'>
                                 SVG
                             </button>
                             <button className={type === 'png' ? `btn btn-secondary ${classes.option}` : `btn ${classes.option}`} value='png'
-                                onClick={handleDownload}>
+                                onClick={handleDownload} data-toggle="tooltip" title='Download PNG Format'>
                                 PNG
                             </button>
                         </div>
