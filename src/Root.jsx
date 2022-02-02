@@ -42,3 +42,6 @@ export default Root
 Root.propTypes = {
     data: PropTypes.object
 }
+BadgeCard.propTypes = {
+    data: PropTypes.object
+}
