@@ -11,7 +11,18 @@ const Search = ({ downloadType, search, type }) => {
         downloadType(e.target.value)
     }
 
-    
+    const handleChange = (e) => {
+        search(e.target.value)
+    }
+
+    const handleScroll = () => {
+        if (window.scrollY >= 140) {
+            setStickyNav(true)
+        } else {
+            setStickyNav(false)
+        }
+    }
+    window.addEventListener('scroll', handleScroll)
 
     return (
         <section className={stickyNav ? `${classes.navbar && classes.active} sticky-top` : `${classes.navbar}`} >
