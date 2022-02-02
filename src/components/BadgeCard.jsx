@@ -2,7 +2,7 @@ import React, { useState, Suspense, lazy } from 'react'
 import Spinner from './Spinner'
 import DownloadLink from "react-download-link";
 import { DownloadIcon } from '@primer/octicons-react'
-import classes from '../styles/badgeCard.module.css'
+import classes from '../styles/all.module.css'
 import CopyHex from './CopyHex';
 import { saveAs } from 'file-saver';
 import SVGToImage from './SVGToImage'
@@ -51,8 +51,8 @@ const IconCard = ({ data }) => {
                         })
                         .map((item) => (
                             <div className="col-md-3 col-sm-4 col-xs-6 my-2" key={item.slug}>
-                                <div className='card' style={{ borderRadius: '1rem' }}>
-                                    <div className='card-img-fluid' style={{ width: '20%', margin: '10px auto', display: 'block' }}>
+                                <div className={`card ${classes.badgeCard}`}>
+                                    <div className={`card-img-fluid ${classes.img}`}>
                                         <Suspense fallback={<Spinner />}>
                                             <SVGIcon
                                                 svg={item.svg}
@@ -67,26 +67,28 @@ const IconCard = ({ data }) => {
                                     </>
 
                                     <div className="d-flex">
-                                        <div className="card-footer w-75"
+
+                                        <div className="card-footer w-75 "
                                             style={{ backgroundColor: `#${item.hex}`, cursor: 'pointer' }}>
-                                            <small className={`${classes.custom} text-light text-center`}>
+                                            <small className={`text-light text-center ${classes.hexText} `}>
                                                 < CopyHex hex={item.hex} />
                                             </small>
                                         </div>
+
                                         <>
                                             {
                                                 downloadType === 'svg' ?
                                                     < DownloadLink
+                                                        className={`card-footer w-25 ${classes.icon} `}
+                                                        style={{ borderRadius: '0 0 14px 0' }}
                                                         label={<DownloadIcon fill='#333' />}
                                                         filename={`${item.title}.${downloadType}`}
                                                         exportFile={() => item.svg}
-                                                        className={`${classes.hoverIcon} card-footer text-center w-25`}
-                                                        style={{ cursor: 'pointer', borderRadius: '0 0 14px 0' }}
                                                     /> :
 
                                                     <button
-                                                        className={`${classes.hoverIcon} card-footer w-25`}
-                                                        style={{ cursor: 'pointer', borderRadius: '0 0 14px 0', border: 'none', borderTop: '1px solid rgba(0, 0, 0, 0.125)' }}
+                                                        className={`${classes.icon} card-footer w-25`}
+                                                        style={{ borderRadius: '0 0 14px 0', border: 'none', borderTop: '1px solid rgba(0, 0, 0, 0.125)' }}
                                                         onClick={() => downloadPNG(item.svg, `${item.title}.${downloadType}`)}
                                                     >
                                                         <DownloadIcon fill='#333' />
