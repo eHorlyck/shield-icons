@@ -1,5 +1,4 @@
 import React, { Component, Suspense, lazy } from 'react'
-import PropTypes from 'prop-types';
 import simpleClass from './services/main'
 import { Spinner } from './components'
 const Header = lazy(() => import('./components/Header'))
@@ -38,10 +37,3 @@ class Root extends Component {
 }
 
 export default Root
-
-Root.propTypes = {
-    data: PropTypes.object
-}
-BadgeCard.propTypes = {
-    data: PropTypes.object
-}
