@@ -50,3 +50,4 @@ class CopyHex extends Component {
 }
 
 export default CopyHex;
+
