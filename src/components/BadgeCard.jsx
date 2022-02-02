@@ -10,7 +10,7 @@ const Badge = lazy(() => import('./Badge'))
 const Search = lazy(() => import('./Search'))
 
 
-const IconCard = ({ data }) => {
+const BadgeCard = ({ data }) => {
 
     const [search, setSearch] = useState('')
     const [downloadType, setDownloadType] = useState('svg')
@@ -103,4 +103,4 @@ const IconCard = ({ data }) => {
         </>
     )
 }
-export default IconCard
+export default BadgeCard
