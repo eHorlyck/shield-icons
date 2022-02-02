@@ -3,7 +3,7 @@ import InlineSVG from 'svg-inline-react';
 import classes from '../styles/header.module.css';
 const simpleIcons = require('simple-icons');
 
-const Header = ({ }) => {
+const Header = () => {
     return (
         <div className='container py-5'>
             <div className="row">
