@@ -39,8 +39,8 @@
 ## Contribution
 I will be open to any contribution. If you have any idea, please let me know. I will be happy to help you.
 
-## Thanks
-I would like to thanks all the developers who made different Libraries, Packages, Tools & APIs. Specially 
+## Thanks To
+All the developers who made different Libraries, Packages, Tools & APIs. Specially 
 - ReactJS
 - Simple Icons
 - Shield.io
