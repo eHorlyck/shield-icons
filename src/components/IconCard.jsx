@@ -11,21 +11,13 @@ const Badge = lazy(() => import('./Badge'))
 const Search = lazy(() => import('./Search'))
 
 
-
 const IconCard = ({ data }) => {
 
     const [search, setSearch] = useState('')
     const [downloadType, setDownloadType] = useState('svg')
 
-    // const [image, setImage] = useState('')
-    // console.log(visitor)
-    // console.log(theme)
-    // console.log(setTheme)
-
-
-    // console.log(image)
     const downloadPNG = (svg, fileName) => {
-        // let file = convertBase64ToFile(base64String, fileName);
+
         SVGToImage({
             svg: svg,
             mimetype: "image/png",
@@ -35,14 +27,9 @@ const IconCard = ({ data }) => {
             outputFormat: "base64"
         })
             .then(outputData => {
-                // setImage(outputData)
-                saveAs(outputData, fileName);
-                // <img src={image} alt="icon" />
-
+                saveAs(outputData, fileName)
             })
             .catch(err => console.log(err))
-
-
     }
 
 
