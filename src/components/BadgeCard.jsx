@@ -1,11 +1,10 @@
 import React, { useState, Suspense, lazy } from 'react'
-import Spinner from './Spinner'
 import DownloadLink from "react-download-link";
 import { DownloadIcon } from '@primer/octicons-react'
-import classes from '../styles/all.module.css'
-import CopyHex from './CopyHex';
 import { saveAs } from 'file-saver';
+import { Spinner, CopyHex } from './'
 import SVGToImage from './SVGToImage'
+import classes from '../styles/all.module.css'
 const SVGIcon = lazy(() => import('./SVGIcon'))
 const Badge = lazy(() => import('./Badge'))
 const Search = lazy(() => import('./Search'))
