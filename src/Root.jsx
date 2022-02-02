@@ -1,6 +1,6 @@
 import React, { Component, Suspense, lazy } from 'react'
 import simpleClass from './services/main'
-import Spinner from './components/Spinner'
+import {Spinner} from './components'
 const Header = lazy(() => import('./components/Header'))
 const BadgeCard = lazy(() => import('./components/BadgeCard'))
 const Footer = lazy(() => import('./components/Footer'))
@@ -18,16 +18,16 @@ class Root extends Component {
 
 
     render() {
-        
+
         const data = this.state.data
-                
+
         return (
             <>
                 <Suspense fallback={<Spinner />}>
                     <Header />
                 </Suspense>
                 <Suspense fallback={<Spinner />}>
-                    {<BadgeCard data={data}/>}
+                    {<BadgeCard data={data} />}
                 </Suspense>
                 <Suspense fallback={<Spinner />}>
                     <Footer />
