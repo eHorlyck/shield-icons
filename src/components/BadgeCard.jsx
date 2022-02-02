@@ -2,7 +2,7 @@ import React, { useState, Suspense, lazy } from 'react'
 import Spinner from './Spinner'
 import DownloadLink from "react-download-link";
 import { DownloadIcon } from '@primer/octicons-react'
-import classes from '../styles/iconCard.module.css'
+import classes from '../styles/badgeCard.module.css'
 import CopyHex from './CopyHex';
 import { saveAs } from 'file-saver';
 import SVGToImage from './SVGToImage'
@@ -80,7 +80,7 @@ const IconCard = ({ data }) => {
                                                         label={<DownloadIcon fill='#333' />}
                                                         filename={`${item.title}.${downloadType}`}
                                                         exportFile={() => item.svg}
-                                                        className={`${classes.hoverIcon} card-footer w-25`}
+                                                        className={`${classes.hoverIcon} card-footer text-center w-25`}
                                                         style={{ cursor: 'pointer', borderRadius: '0 0 14px 0' }}
                                                     /> :
 
