@@ -41,9 +41,9 @@ I will be open to any contribution. If you have any idea, please let me know. I 
 
 ## Thanks To
 All the developers who made different Libraries, Packages, Tools & APIs. Specially 
-- ReactJS
-- Simple Icons
-- Shield.io
+- [React](https://github.com/facebook/react)
+- [Simple Icons](https://github.com/simple-icons/simple-icons)
+- [Shield](https://github.com/badges/shields)
 
 ## License
 This project is under [GPL-3.0]() License.
