@@ -76,6 +76,12 @@ Now You can use this in `2` way
 
 </div>
 
+- #### Way to Use Case of Hex Color 
+After double click on Hex Code, you will get a code in your clipboard like below. Use it wherever you want.
+```
+#00B388
+```
+
 ## Support
 👍🏻 If you're using this project & happy with it or you appreciate what I do and wish to support my work, you can consider by 
 - Support To Buy Ko-fi 🍵
