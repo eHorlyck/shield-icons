@@ -13,7 +13,7 @@ assignees: mrhrifat
 - Write in details for easy to understand.
 - You can write your text into code block. (Optional)
 
-**Note:** If you don't understand see an example [here]()
+**Note:** If you don't understand see an example [here](https://github.com/mrhrifat/web-badge/issues/2)
 
 ## Main
 **What is your feature request. Please describe.**
