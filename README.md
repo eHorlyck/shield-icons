@@ -45,5 +45,5 @@ All the developers who made different Libraries, Packages, Tools & APIs. Special
 - Simple Icons
 - Shield.io
 
-## Licence
-This project is under [GPL-3.0]() Licence.
+## License
+This project is under [GPL-3.0]() License.
