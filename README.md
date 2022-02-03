@@ -49,7 +49,7 @@ Actually because of an issue for now this project is running slow on the web. I'
     - SVG to PNG Conversion
 
 - #### Way to Use Case of Badge 
-After double click on Badge, you will get a code in your clipboard like below :-
+After double click on Badge, you will get a code in your clipboard like below. This code API are owned by **Shield**. Follow their rules for use them. I won't take responsibility for any damage.
 
 ```
 ![](https://img.shields.io/badge/About.me-00A98F?style=for-the-badge&logo=About.me&logoColor=white)
@@ -82,7 +82,7 @@ After double click on Hex Code, you will get a code in your clipboard like below
 #00B388
 ```
 - #### Way to Use Case of Download SVG & PNG
-    - By default whenever you click on Download. You will get a SVG icon. This Icon owned by Simple Icons. Follow their rules for use them.
+    - By default whenever you click on Download. You will get a SVG icon. This Icon owned by **Simple Icons**. Follow their rules for use them. I won't take responsibility for any damage.
     - Switch to SVG > PNG for download PNG icon of any Brand. 
 
 
