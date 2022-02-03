@@ -81,6 +81,10 @@ After double click on Hex Code, you will get a code in your clipboard like below
 ```
 #00B388
 ```
+- #### Way to Use Case of Download SVG & PNG
+    - By default whenever you click on Download. You will get a SVG icon. This Icon owned by Simple Icons. Follow their rules for use them.
+    - Switch to SVG > PNG for download PNG icon of any Brand. 
+
 
 ## Support
 👍🏻 If you're using this project & happy with it or you appreciate what I do and wish to support my work, you can consider by 
