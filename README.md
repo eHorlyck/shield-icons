@@ -14,6 +14,9 @@
   <img src="https://img.shields.io/github/license/mrhrifat/web-badge?style=for-the-badge">
 </div>
 
+## Motive
+This project is aimed to simplify your GitHub Profile Badge or Web Badge creation process by providing amzging card which can be copy on double click in Markdown. Beside you can also download Brand Logo in SVG & PNG format.Moreover it will provide Hex Color code of Brand Logo.
+
 ## Features
 - [x] Brand SVG Logo
 - [x] Brand Badge
