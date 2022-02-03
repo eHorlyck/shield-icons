@@ -48,6 +48,34 @@ Actually because of an issue for now this project is running slow on the web. I'
     - Search Process
     - SVG to PNG Conversion
 
+- #### Way to Use Case of Badge 
+After double click on Badge, you will get a code in your clipboard like below :-
+
+```
+![](https://img.shields.io/badge/About.me-00A98F?style=for-the-badge&logo=About.me&logoColor=white)
+```
+
+Now You can use this in `2` way
+1. Paste where you want to use badge without making any changes to code.
+```
+![](https://img.shields.io/badge/About.me-00A98F?style=for-the-badge&logo=About.me&logoColor=white)
+```
+<div align='center'> 
+
+![](https://img.shields.io/badge/About.me-00A98F?style=for-the-badge&logo=About.me&logoColor=white)
+
+</div>
+
+2. Take only `URL` & set to `<img src='URL'/>`
+```
+<img src='https://img.shields.io/badge/About.me-00A98F?style=for-the-badge&logo=About.me&logoColor=white)'/>
+```
+<div align='center'> 
+
+<img src='https://img.shields.io/badge/About.me-00A98F?style=for-the-badge&logo=About.me&logoColor=white)'/>
+
+</div>
+
 ## Support
 👍🏻 If you're using this project & happy with it or you appreciate what I do and wish to support my work, you can consider by 
 - Support To Buy Ko-fi 🍵
