@@ -37,7 +37,7 @@
 
 
 ## Contribution
-I will be open to any contribution. If you have any idea, please let me know. I will be happy to help you.
+I will be open to any contribution. If you have any idea, please let me know. Please follow this steps to [Contribute](https://github.com/mrhrifat/web-badge/blob/master/CONTRIBUTING.md)
 
 ## Thanks To
 All the developers who made different Libraries, Packages, Tools & APIs. Specially 
