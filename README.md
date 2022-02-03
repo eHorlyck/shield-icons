@@ -48,6 +48,7 @@ As before declared, because of an issue for now the website it running slow & it
 - Search Process
 - SVG to PNG Conversion
 
+##
 - #### Way to Use Case of Badge 
 After double click on Badge, you will get a code in your clipboard like below. This code API are owned by **Shield**. Follow their rules for use them. I won't take responsibility for any damage.
 
