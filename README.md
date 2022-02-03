@@ -17,6 +17,7 @@
 ## Motive
 This project is aimed to simplify your GitHub Profile Badge or Web Badge creation process by providing amzging card which can be copy on double click in Markdown. Beside you can also download Brand Logo in SVG & PNG format.Moreover it will provide Hex Color code of Brand Logo.
 
+
 ## Features
 - [x] Brand SVG Logo
 - [x] Brand Badge
@@ -42,7 +43,7 @@ This project is aimed to simplify your GitHub Profile Badge or Web Badge creatio
 ## Contribution
 I will be open to any contribution. If you have any idea, please let me know. Please follow this steps to [Contribute](https://github.com/mrhrifat/web-badge/blob/master/CONTRIBUTING.md)
 
-## Thanks To
+## Thanks
 All the developers who made different Libraries, Packages, Tools & APIs. Specially 
 - [React](https://github.com/facebook/react)
 - [Simple Icons](https://github.com/simple-icons/simple-icons)
