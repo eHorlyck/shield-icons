@@ -27,6 +27,19 @@ This project is aimed to simplify your GitHub Profile Badge or Web Badge creatio
 - [ ] Light Dark Theme
 - [ ] More Fast
 
+## Usage
+Actually because of an issue for now this project is running slow on the web. I'll try to fix it soon. However, it can still be used. You have to wait 1-2 minutes for the loading to complete.
+
+- #### Where to Use
+    - [x] GitHub Profile
+    - [x] README.md
+    - [x] Markdown File
+    - [x] Webpage or Website 
+- #### Best Way of Use
+    - [x] Firefox Browser. (Can be use in other Browser)
+    - [x]  Hover & Double click for Copy  Badge & Hex Code.
+    - [x] Click download & get SVG Logo.
+    - [x] Change SVG to PNG for Download PNG Logo.
 
 
 
