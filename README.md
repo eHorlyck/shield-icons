@@ -41,7 +41,12 @@ Actually because of an issue for now this project is running slow on the web. I'
     - [x] Click download & get SVG Logo.
     - [x] Change SVG to PNG for Download PNG Logo.
 
-
+## How To Use
+ As before declared, because of an issue for now the website it running slow & it create a side effect on
+    - Generating Badge
+    - Loading Webpage
+    - Search Process
+    - SVG to PNG Conversion
 
 ## Support
 👍🏻 If you're using this project & happy with it or you appreciate what I do and wish to support my work, you can consider by 
