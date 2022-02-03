@@ -1,7 +1,7 @@
 <div align="center"> 
   <img src="https://i.ibb.co/PTPfSCw/WebBadge.png" alt="WebBadge" border="0" height='90'>
   <h2>Web Badge</h2>
-  Web Badge will create about 2152 amazing badges to <br> use in GitHub Markdown or Any Web Pages.<br><br>
+  Web Badge will provide about 2152 amazing Badges, SVG Logo & Hex Color Code  to <br> use in GitHub Markdown or Any Web Pages.<br><br>
   
   <img src="https://img.shields.io/github/forks/mrhrifat/web-badge?style=for-the-badge">
 
