@@ -42,11 +42,11 @@ Actually because of an issue for now this project is running slow on the web. I'
     - [x] Change SVG to PNG for Download PNG Logo.
 
 ## How To Use
- As before declared, because of an issue for now the website it running slow & it create a side effect on
-    - Generating Badge
-    - Loading Webpage
-    - Search Process
-    - SVG to PNG Conversion
+As before declared, because of an issue for now the website it running slow & it create a side effect on
+- Generating Badge
+- Loading Webpage
+- Search Process
+- SVG to PNG Conversion
 
 - #### Way to Use Case of Badge 
 After double click on Badge, you will get a code in your clipboard like below. This code API are owned by **Shield**. Follow their rules for use them. I won't take responsibility for any damage.
