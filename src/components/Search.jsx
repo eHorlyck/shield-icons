@@ -75,7 +75,7 @@ const Search = ({ downloadType, search, type }) => {
                                 </a>
                             </li>
                             <li className="nav-item" data-toggle="tooltip" title='Bug Report'>
-                                <a className="nav-link" href="https://github.com/mrhrifat/web-badge/issues/new" target='_blank' rel="noopener noreferrer">
+                                <a className="nav-link" href="https://github.com/mrhrifat/web-badge/issues/new?assignees=mrhrifat&labels=bug&template=bug_report.md&title=" target='_blank' rel="noopener noreferrer">
                                     {<BugIcon size='22' />}
                                 </a>
                             </li>
