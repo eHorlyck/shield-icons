@@ -1,6 +1,7 @@
 import React, { Component, Suspense, lazy } from 'react'
 import simpleClass from './services/main'
 import { Spinner } from './components'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 const Header = lazy(() => import('./components/Header'))
 const BadgeCard = lazy(() => import('./components/BadgeCard'))
 const Footer = lazy(() => import('./components/Footer'))
@@ -21,17 +22,23 @@ class Root extends Component {
         const data = this.state.data
 
         return (
-            <>
+            <BrowserRouter>
                 <Suspense fallback={<Spinner />}>
-                    <Header />
+                    <Routes>
+                        <Route path='/' element={<Header />} />
+                    </Routes>
                 </Suspense>
                 <Suspense fallback={<Spinner />}>
-                    {<BadgeCard data={data} />}
+                    <Routes>
+                        <Route path='/' element={<BadgeCard data={data} />} />
+                    </Routes>
                 </Suspense>
                 <Suspense fallback={<Spinner />}>
-                    <Footer />
+                    <Routes>
+                        <Route path='/' element={<Footer />} />
+                    </Routes>
                 </Suspense>
-            </>
+            </BrowserRouter>
         )
     }
 }
