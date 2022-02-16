@@ -29,7 +29,7 @@ This project is aimed to simplify your GitHub Profile Badge or Web Badge creatio
 
 ## Usage
 Actually because of an issue for now this project is running slow on the web. I'll try to fix it soon. However, it can still be used. You have to wait 1-2 minutes for the loading to complete.
-
+**Note:** If you can't see anything in browser after run, please disable your AdBlocker for this website.
 - #### Where to Use
     - [x] GitHub Profile
     - [x] README.md
