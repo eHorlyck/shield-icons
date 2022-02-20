@@ -14,6 +14,11 @@
   <img src="https://img.shields.io/github/license/mrhrifat/web-badge?style=for-the-badge">
 </div>
 
+## Important
+This project runs slowly because of a lacking package & for that I have to use API & the API should run 2152+ times on homepage. That makes this project quite slow. To prevent this & make some optimization I use Lazy, Suspense of React. And as soon as possible I will fix & I'll make another project which can deal more better than it.
+However, it can still be used. You have to wait 1-2 minutes for the loading to complete.
+**Note:** If you can't see anything in browser after run, please disable your AdBlocker for this website.
+
 ## Motive
 This project is aimed to simplify your GitHub Profile Badge or Web Badge creation process by providing amazing card which can be copy on double click in Markdown. Beside you can also download Brand Logo in SVG & PNG format. Moreover it will provide Hex Color code of Brand Logo.
 
