@@ -17,6 +17,7 @@
 ## Important
 This project runs slowly because of a lacking package & for that I have to use API & the API should run 2152+ times on homepage. That makes this project quite slow. To prevent this & make some optimization I use Lazy, Suspense of React. And as soon as possible I will fix & I'll make another project which can deal more better than it.
 However, it can still be used. You have to wait 1-2 minutes for the loading to complete.
+
 **Note:** If you can't see anything in browser after run, please disable your AdBlocker for this website.
 
 ## Motive
