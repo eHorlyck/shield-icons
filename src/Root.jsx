@@ -1,8 +1,7 @@
-import React, { Component, Suspense, lazy } from 'react'
-import simpleClass from './services/main'
+import React, { Component, lazy, Suspense } from 'react'
 import { Spinner } from './components'
-import Test from './components/Test'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import simpleClass from './services/main'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 const Header = lazy(() => import('./components/Header'))
 const BadgeCard = lazy(() => import('./components/BadgeCard'))
 const Footer = lazy(() => import('./components/Footer'))
@@ -24,9 +23,6 @@ class Root extends Component {
 
         return (
             <BrowserRouter>
-            <Routes>
-                <Route path='/' element={<Test/>}/>
-            </Routes>
                 <Suspense fallback={<Spinner />}>
                     <Routes>
                         <Route path='/' element={<Header />} />
