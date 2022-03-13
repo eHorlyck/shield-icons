@@ -1,7 +1,7 @@
+import { CheckIcon, CopyIcon } from '@primer/octicons-react';
 import React, { Component } from 'react';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 import ReactMarkdown from 'react-markdown';
-import { CopyToClipboard } from 'react-copy-to-clipboard'
-import { CopyIcon, CheckIcon } from '@primer/octicons-react'
 
 class Badge extends Component {
 
