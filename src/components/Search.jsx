@@ -1,6 +1,6 @@
+import { BugIcon, HeartIcon, LawIcon, PersonIcon, RepoForkedIcon, StarIcon } from '@primer/octicons-react';
 import React, { useState } from 'react';
-import { RepoForkedIcon, PersonIcon, LawIcon, StarIcon, HeartIcon, BugIcon } from '@primer/octicons-react'
-import classes from '../styles/all.module.css'
+import classes from '../styles/all.module.css';
 
 
 const Search = ({ downloadType, search, type }) => {
@@ -34,7 +34,7 @@ const Search = ({ downloadType, search, type }) => {
                             className="form-control"
                             placeholder="Search by brand..."
                             onChange={handleChange}
-                            data-toggle="tooltip" 
+                            data-toggle="tooltip"
                             title='Search by brand'
                         />
                     </div>
