@@ -1,10 +1,10 @@
-import React, { useState, Suspense, lazy } from 'react'
-import DownloadLink from "react-download-link";
-import { DownloadIcon } from '@primer/octicons-react'
+import { DownloadIcon } from '@primer/octicons-react';
 import { saveAs } from 'file-saver';
-import { Spinner, CopyHex } from './'
-import SVGToImage from './SVGToImage'
-import classes from '../styles/all.module.css'
+import React, { lazy, Suspense, useState } from 'react';
+import DownloadLink from "react-download-link";
+import classes from '../styles/all.module.css';
+import { CopyHex, Spinner } from './';
+import SVGToImage from './SVGToImage';
 const SVGIcon = lazy(() => import('./SVGIcon'))
 const Badge = lazy(() => import('./Badge'))
 const Search = lazy(() => import('./Search'))
