@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import iconsdataReducer from "../services/data";
+import iconsDataReducer from "../services/iconsDataSlice";
 
 export const store = configureStore({
   reducer: {
-    iconsdata: iconsdataReducer,
+    iconsData: iconsDataReducer,
   },
 });
