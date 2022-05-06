@@ -3,15 +3,16 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   value: "",
 };
-const data = new simpleClass();
-console.log(data.getIcon());
+const simpleData = new simpleClass();
+console.log(simpleData.getIcon());
 
+let newData = simpleData.getIcon();
 export const iconsDataSlice = createSlice({
   name: "iconsdata",
   initialState,
-  reducer: {
+  reducers: {
     getData: (state) => {
-      state.value = data.getIcon();
+      state.value = newData;
     },
   },
 });
