@@ -7,15 +7,16 @@ const simpleData = new simpleClass();
 console.log(simpleData.getIcon());
 
 let newData = simpleData.getIcon();
-export const iconsDataSlice = createSlice({
-  name: "iconsdata",
+
+export const iconDataSlice = createSlice({
+  name: "iconsData",
   initialState,
   reducers: {
     getData: (state) => {
-      state.value = newData;
+      state.value = simpleData.getIcon();
     },
   },
 });
 
-export const { getData } = iconsDataSlice.actions;
-export default iconsDataSlice.reducer;
+export const { getData } = iconDataSlice.actions;
+export default iconDataSlice.reducer;
