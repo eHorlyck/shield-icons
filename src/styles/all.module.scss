@@ -1,0 +1,151 @@
+/*
+         Mrh Rifat
+     Front End Developer
+
+	==========Index=========
+    01) Header Section
+    02) Search Section
+	03) BadgeCard Section
+    04) Footer Section
+	05) Media Query Section
+
+	========================
+*/
+/*===== 01) Header Section =====*/
+.icon {
+    li {
+        width: 65px;
+
+        &:hover {
+            fill: #fff;
+            background-color: #333;
+            border-radius: 8px;
+        }
+    }
+
+}
+
+
+
+/*===== 02) Search Section =====*/
+
+.navbar {
+    background-color: #fff;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+.active {
+    box-shadow: 0 2px 5px 0 #6c757d;
+    background-color: #fff;
+    transition: all .3s ease-in;
+}
+
+.download {
+    .btn-group {
+        border: 1px solid #6c757d;
+        border-radius: 0.25rem;
+    }
+}
+
+.option {
+    padding: 5px 8px;
+    border-radius: 0;
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.searchNav {
+
+    li {
+        a {
+            padding: 7px 10px;
+        }
+
+        svg {
+            fill: #000;
+        }
+
+        &:hover {
+            background-color: #000;
+            border-radius: 8px;
+
+            svg {
+                fill: #fff;
+
+            }
+        }
+    }
+}
+
+
+/*===== 03)  BadgeCard Section =====*/
+.badgeCard {
+    border-radius: 1rem;
+    box-shadow: 1px 0px 7px 1px rgba(0, 0, 0, 0.48);
+
+    .img {
+        width: 20%;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .hexText {
+        p {
+            margin: 0;
+        }
+    }
+
+    .icon {
+        &:hover {
+            background-color: #333 !important;
+
+            svg {
+                fill: #fff;
+            }
+        }
+    }
+}
+
+
+
+/*===== 04) Footer Section =====*/
+.footer {
+    font-size: 14px;
+
+    a {
+        color: #000;
+        font-weight: bold;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+/*===== 05) Media Query Section =====*/
+
+@media screen and (max-width: 767px) {
+    .heading {
+        text-align: center;
+    }
+
+    .download {
+        margin: 5px 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .icon {
+        justify-content: center;
+    }
+
+    .searchNav {
+        justify-content: center;
+    }
+}
