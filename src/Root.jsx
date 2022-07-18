@@ -1,7 +1,7 @@
 import React, { Component, lazy, Suspense } from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Spinner } from './components'
 import simpleClass from './services/main'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
 const Header = lazy(() => import('./components/Header'))
 const BadgeCard = lazy(() => import('./components/BadgeCard'))
 const Footer = lazy(() => import('./components/Footer'))
