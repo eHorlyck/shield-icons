@@ -1,5 +1,5 @@
 const simpleIcons = require('simple-icons');
-const slug = require('../data/slug.json')
+const slug = require('../data/test.json')
 
 
 export default class simpleClass {
