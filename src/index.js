@@ -1,8 +1,8 @@
+import 'bootstrap/dist/css/bootstrap.css';
+import GA4React from "ga-4-react";
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'bootstrap/dist/css/bootstrap.css';
 import App from './App';
-import GA4React from "ga-4-react";
 
 
 // ReactDOM.render(
