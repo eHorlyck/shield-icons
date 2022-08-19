@@ -1,19 +1,21 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Web Badge",
+  "name": "Web Badge",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "./logo_x128.png",
+      "sizes": "128x128",
+      "type": "image/x-icon",
+      "purpose": "maskable"
     },
     {
-      "src": "logo192.png",
+      "src": "./logo_x256.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "256x256",
+      "purpose": "maskable"
     },
     {
-      "src": "logo512.png",
+      "src": "./logo.png",
       "type": "image/png",
       "sizes": "512x512"
     }
