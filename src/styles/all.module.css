@@ -15,7 +15,6 @@
 .icon li {
   width: 65px;
 }
-
 .icon li:hover {
   fill: #fff;
   background-color: #333;
@@ -31,11 +30,9 @@
 }
 
 .active {
-  -webkit-box-shadow: 0 2px 5px 0 #6c757d;
-          box-shadow: 0 2px 5px 0 #6c757d;
+  box-shadow: 0 2px 5px 0 #6c757d;
   background-color: #fff;
-  -webkit-transition: all .3s ease-in;
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .download .btn-group {
@@ -47,25 +44,20 @@
   padding: 5px 8px;
   border-radius: 0;
 }
-
 .option:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .searchNav li a {
   padding: 7px 10px;
 }
-
 .searchNav li svg {
   fill: #000;
 }
-
 .searchNav li:hover {
   background-color: #000;
   border-radius: 8px;
 }
-
 .searchNav li:hover svg {
   fill: #fff;
 }
@@ -73,24 +65,19 @@
 /*===== 03)  BadgeCard Section =====*/
 .badgeCard {
   border-radius: 1rem;
-  -webkit-box-shadow: 1px 0px 7px 1px rgba(0, 0, 0, 0.48);
-          box-shadow: 1px 0px 7px 1px rgba(0, 0, 0, 0.48);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
-
 .badgeCard .img {
   width: 20%;
   margin: 10px auto;
   display: block;
 }
-
 .badgeCard .hexText p {
   margin: 0;
 }
-
 .badgeCard .icon:hover {
   background-color: #333 !important;
 }
-
 .badgeCard .icon:hover svg {
   fill: #fff;
 }
@@ -99,13 +86,11 @@
 .footer {
   font-size: 14px;
 }
-
 .footer a {
   color: #000;
   font-weight: bold;
   text-decoration: none;
 }
-
 .footer a:hover {
   text-decoration: underline;
 }
@@ -120,17 +105,11 @@
     text-align: center;
   }
 }
-
 @media screen and (max-width: 575px) {
   .icon {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .searchNav {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
-}
-/*# sourceMappingURL=all.module.css.map */
+}/*# sourceMappingURL=all.module.css.map */
