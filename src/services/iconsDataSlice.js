@@ -1,5 +1,5 @@
-import simpleClass from "./main";
 import { createSlice } from "@reduxjs/toolkit";
+import simpleClass from "./main";
 const initialState = {
   value: "",
 };
