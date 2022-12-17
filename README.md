@@ -15,7 +15,7 @@
 </div>
 
 ## Important
-
+This project is now under maintainance. We are coming with V 2.0
 
 ## Motive
 This project is aimed to simplify your GitHub Profile Badge or Web Badge creation process by providing amazing card which can be copy on double click in Markdown. Beside you can also download Brand Logo in SVG & PNG format. Moreover it will provide Hex Color code of Brand Logo.
