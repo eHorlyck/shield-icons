@@ -44,44 +44,6 @@ As before declared, because of an issue for now the website it running slow & it
 - Search Process
 - SVG to PNG Conversion
 
-##
-- #### Way to Use Case of Badge 
-After double click on Badge, you will get a code in your clipboard like below. This code API are owned by **Shield**. Follow their rules for use them. I won't take responsibility for any damage.
-
-```
-![](https://img.shields.io/badge/About.me-00A98F?style=for-the-badge&logo=About.me&logoColor=white)
-```
-
-Now You can use this in `2` way
-1. Paste where you want to use badge without making any changes to code.
-```
-![](https://img.shields.io/badge/About.me-00A98F?style=for-the-badge&logo=About.me&logoColor=white)
-```
-<div align='center'> 
-
-![](https://img.shields.io/badge/About.me-00A98F?style=for-the-badge&logo=About.me&logoColor=white)
-
-</div>
-
-2. Take only `URL` & set to `<img src='URL'/>`
-```
-<img src='https://img.shields.io/badge/About.me-00A98F?style=for-the-badge&logo=About.me&logoColor=white)'/>
-```
-<div align='center'> 
-
-<img src='https://img.shields.io/badge/About.me-00A98F?style=for-the-badge&logo=About.me&logoColor=white)'/>
-
-</div>
-
-- #### Way to Use Case of Hex Color 
-After double click on Hex Code, you will get a code in your clipboard like below. Use it wherever you want.
-```
-#00B388
-```
-- #### Way to Use Case of Download SVG & PNG
-    - By default whenever you click on Download. You will get a SVG icon. This Icon owned by **Simple Icons**. Follow their rules for use them. I won't take responsibility for any damage.
-    - Switch to SVG > PNG for download PNG icon of any Brand. 
-
 
 ## Support
 👍🏻 If you're using this project & happy with it or you appreciate what I do and wish to support my work, you can consider by 
