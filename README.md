@@ -64,7 +64,7 @@ As before declared, because of an issue for now the website it running slow & it
 
 ## Contribution
 
-I will be open to any contribution. If you have any idea, please let me know. Please follow this steps to [Contribute](https://github.com/mrhrifat/web-badge/blob/master/CONTRIBUTING.md)
+I will be open to any contribution. If you have any idea, please let me know. Please follow this steps to [Contribute](https://github.com/mrhrifat/shield-icons/blob/master/CONTRIBUTING.md)
 
 ## License
 
