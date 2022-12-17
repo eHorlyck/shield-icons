@@ -99,11 +99,5 @@ After double click on Hex Code, you will get a code in your clipboard like below
 ## Contribution
 I will be open to any contribution. If you have any idea, please let me know. Please follow this steps to [Contribute](https://github.com/mrhrifat/web-badge/blob/master/CONTRIBUTING.md)
 
-## Thanks
-All the developers who made different Libraries, Packages, Tools & APIs. Specially 
-- [React](https://github.com/facebook/react)
-- [Simple Icons](https://github.com/simple-icons/simple-icons)
-- [Shield](https://github.com/badges/shields)
-
 ## License
 This project is under [GPL-3.0](https://github.com/mrhrifat/web-badge/blob/master/LICENSE.md) License.
