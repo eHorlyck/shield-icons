@@ -1,9 +1,0 @@
-export { default as Badge } from "./Badge";
-export { default as BadgeCard } from "./BadgeCard";
-export { default as CopyHex } from "./CopyHex";
-export { default as Footer } from "./Footer";
-export { default as Header } from "./Header";
-export { default as Search } from "./Search";
-export { default as Spinner } from "./Spinner";
-export { default as SVGIcon } from "./SVGIcon";
-export { default as SVGToImage } from "./SVGToImage";
