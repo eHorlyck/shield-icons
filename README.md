@@ -68,4 +68,4 @@ I will be open to any contribution. If you have any idea, please let me know. Pl
 
 ## License
 
-This project is under [GPL-3.0](https://github.com/mrhrifat/web-badge/blob/master/LICENSE.md) License.
+This project is under [GPL-3.0](https://github.com/mrhrifat/shield-icons/blob/master/LICENSE.md) License.
