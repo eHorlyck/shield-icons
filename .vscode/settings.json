@@ -2,6 +2,7 @@
   "json.maxItemsComputed": 15000,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
+  "eslint.alwaysShowStatus": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
     "source.fixAll.tslint": true,
