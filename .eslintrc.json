@@ -25,6 +25,11 @@
     "max-len": [2, 200],
     "arrow-body-style": 0,
     "react/prop-types": 0,
+    "operator-linebreak": [
+      "off",
+      "after",
+      ["error", "after", { "overrides": { "?": "before", ":": "before" } }]
+    ],
     "react/function-component-definition": [
       2,
       {
