@@ -1,7 +1,7 @@
 <div align="center"> 
   <img src="https://i.ibb.co/PTPfSCw/WebBadge.png" alt="WebBadge" border="0" height='90'>
   <h2>Shield Icons</h2>
-  Shield Icons will provide about 2401 amazing<br> Badges, SVG Logo & Hex Color Code <br>to use in GitHub Markdown or Any Web Pages.<br><br>
+    Build & Download <b>2401</b> popular brands <br> Badge, SVG, Hex Code & so on <b>Shield Icons</b> <br>to use in GitHub Markdown or Any Web Pages<br><br>
   
   <img src="https://img.shields.io/github/forks/mrhrifat/web-badge?style=for-the-badge">
 
@@ -16,21 +16,21 @@
 
 ## Important
 
-This project is now under maintainance. We are coming with V 2.0
+This project is now under maintainance. We are coming with V 2.0.
 
 ## Motive
 
-This project is aimed to simplify your GitHub Profile Badge or Web Badge creation process by providing amazing card which can be copy on double click in Markdown. Beside you can also download Brand Logo in SVG & PNG format. Moreover it will provide Hex Color code of Brand Logo.
+This project is aimed to simplify your GitHub Profile Badge or Web Badge Badge creation process by providing amazing dynamic process. Beside you can also download Brand Logo in SVG & PNG format. Moreover it will provide Hex Color code of Brand Logo.
 
 ## Features
 
 - [x] Brand SVG Logo
 - [x] Brand Badge
-- [x] Logo Hex Code
-- [x] Copy Badge & Hex Code
-- [x] Download Brand Logo in SVG or PNG Format
-- [ ] Light Dark Theme
-- [ ] More Fast
+- [x] Brand Hex Code
+- [x] Copy Badge SVG & Hex Code
+- [x] Download Brand Logo SVG/PNG Format
+- [x] Light Dark Theme
+- [x] Easy to Use
 
 ## Use
 
@@ -38,15 +38,6 @@ This project is aimed to simplify your GitHub Profile Badge or Web Badge creatio
 - [x] README.md
 - [x] Markdown File
 - [x] Webpage or Website
-
-## How To Use
-
-As before declared, because of an issue for now the website it running slow & it create a side effect on
-
-- Generating Badge
-- Loading Webpage
-- Search Process
-- SVG to PNG Conversion
 
 ## Support
 
